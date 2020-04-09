@@ -1,3 +1,38 @@
+
+/*----------------------  Mobile First------------------*/
+
+.header{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height:fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
 h1{
-    text-transform: uppercase;
+    font-family: 'Rancho', cursive;
+    color:yellow;
+    display: inline;
+    margin-left: 8px;
+    font-size: xx-large;
+}
+#logo{
+    width: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+/*--------------  Hay que activar esto en tamaño computadora------------------*/
+.main-nav ul li{
+    display: none;
+    list-style-type: none;
+    padding:10px;
+    color: white;
+}
+
+ /*----------------------  La imagen de fondo no aparece------------------*/
+
+.container-background{
+    background-image: url(../imagenes/fondo1.jpg);
+    background: no-repeat;
+    background-size:contain ;    
 }

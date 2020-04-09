@@ -11,7 +11,7 @@
 }
 h1{
     font-family: 'Rancho', cursive;
-    color:yellow;
+    color:rgb(255, 196, 0);
     display: inline;
     margin-left: 8px;
     font-size: xx-large;
@@ -21,7 +21,6 @@ h1{
     margin-top: 5px;
     margin-left: 5px;
 }
-/*--------------  Hay que activar esto en tamaño computadora------------------*/
 .main-nav ul li{
     display: none;
     list-style-type: none;
@@ -29,10 +28,30 @@ h1{
     color: white;
 }
 
- /*----------------------  La imagen de fondo no aparece------------------*/
 
-.container-background{
-    background-image: url(../imagenes/fondo1.jpg);
-    background: no-repeat;
-    background-size:contain ;    
+ /*----------------------  La imagen de fondo ------------------*/
+
+.container-background{  
+    width: 100%;
+}
+.background{
+    width: 100%;
+}
+
+
+
+
+/*----------------------------------Computadora------------------------*/
+
+@media(min-width:768px){
+
+.main-nav ul li{
+    display:inline-flex ;
+    list-style-type: none;
+    padding:10px;
+    color: white;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
 }

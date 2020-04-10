@@ -35,10 +35,26 @@ h1{
     width: 100%;
 }
 .background{
-    width: 100%;
+    position: relative;
+    width: 107%;
+    z-index: 1;
 }
-
-
+.texto-fondo1{
+    position: absolute;
+    z-index: 2;
+    left: 8em;
+    top: 5em;
+    font-size: large;
+    font-family: 'Rancho', cursive;
+}
+.texto-fondo2{
+    position: absolute;
+    z-index: 2;
+    left: 10em;
+    top: 7em;
+    font-size: medium;
+    font-family: 'Rancho', cursive;
+}
 
 
 /*----------------------------------Computadora------------------------*/
@@ -52,6 +68,25 @@ h1{
     color: white;
     flex-direction: row;
     justify-content: flex-end;
+}
+.background{
+    width: 101%;
+}
+.texto-fondo1{
+    position: absolute;
+    z-index: 2;
+    left: 15em;
+    top: 5em;
+    font-size: xx-large;
+    font-family: 'Rancho', cursive;
+}
+.texto-fondo2{
+    position: absolute;
+    z-index: 2;
+    left: 20em;
+    top: 9em;
+    font-size: x-large;
+    font-family: 'Rancho', cursive;
 }
 
 }

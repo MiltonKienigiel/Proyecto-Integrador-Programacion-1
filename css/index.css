@@ -28,7 +28,9 @@ h1{
     color: white;
 }
 
-
+.texto-inicio{
+    display:inline-flex;
+}
  /*----------------------  La imagen de fondo ------------------*/
 
 .container-background{  
@@ -42,7 +44,7 @@ h1{
 .texto-fondo1{
     position: absolute;
     z-index: 2;
-    left: 8em;
+    left: 50%;
     top: 5em;
     font-size: large;
     font-family: 'Rancho', cursive;
@@ -75,7 +77,7 @@ h1{
 .texto-fondo1{
     position: absolute;
     z-index: 2;
-    left: 15em;
+    left: 60%;
     top: 5em;
     font-size: xx-large;
     font-family: 'Rancho', cursive;
@@ -83,7 +85,7 @@ h1{
 .texto-fondo2{
     position: absolute;
     z-index: 2;
-    left: 20em;
+    left: 60%;
     top: 9em;
     font-size: x-large;
     font-family: 'Rancho', cursive;

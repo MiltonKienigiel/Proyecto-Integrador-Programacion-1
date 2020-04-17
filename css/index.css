@@ -28,6 +28,10 @@ h1{
     padding:10px;
     color: black;
 }
+
+/*---------------------------------------------------------------------*/
+
+
 /*----------------------  Botones Header ------------------*/
 .boton-generos{
     border: black 4px inset;
@@ -46,11 +50,13 @@ h1{
     border-radius: 5px 5px 10px 10px;
 }
 
+
+/*---------------------------------------------------------------------*/
+
  /*----------------------  La imagen de fondo ------------------*/
 
 .container-background{  
     width: 100%;
-    display: flex;
 }
 .background{
     position: relative;
@@ -64,8 +70,9 @@ h1{
     font-size: large;
     font-family: 'Roboto', sans-serif;
     color: white;
-    display: flex;
-    
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 .texto-fondo2{
     position: absolute;
@@ -74,8 +81,81 @@ h1{
     font-size: medium;
     font-family: 'Roboto', sans-serif;
     color: white;
-    text-align: justify center;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
+.playlist-button{
+    position: absolute;
+    z-index: 2;
+}
+
+
+/*---------------------------------------------------------------------*/
+
+/*----------------------------------Secciones Celu------------------------*/
+
+.seccion{
+    display:flex;
+    flex-direction: column;
+    color: white;
+}
+.texto-secciones{
+    color: white;
+    text-align: center;
+}
+
+/*---------------------------------------------------------------------*/
+
+
+/*----------------------------------Top Canciones Celu------------------------*/
+.container-tracks{
+    background-color: black;
+    margin: 20px;
+}
+.container1{
+    background-color: teal;
+    margin: 20px;
+    text-align: center;
+}
+.imagen-perreo-sola{
+    width:100%;
+}
+/*---------------------------------------------------------------------*/
+
+/*----------------------------------Top Artistas Celu------------------------*/
+.container-artistas{
+    background-color: yellow;
+    margin: 20px;
+}
+.container2{
+    background-color: turquoise;
+    margin: 20px;
+    text-align: center;
+}
+.imagen-drake{
+    width: 100%;
+}
+/*---------------------------------------------------------------------*/
+
+/*----------------------------------Top Album Celu------------------------*/
+.container-album{
+    background-color:lightblue;
+    margin: 20px;
+}
+.container3{
+    background-color: lightcoral;
+    margin: 20px;
+    text-align: center;
+}
+.imagen-colores{
+    width: 100%;
+}
+/*---------------------------------------------------------------------*/
+
+
+
+
 /*----------------------------------Footer------------------------*/
 .footer ul li{
     display:inline-flex ;
@@ -92,7 +172,14 @@ h1{
 }
 .footer{
     display:flex;
+    flex-direction: row;
 }
+
+/*---------------------------------------------------------------------*/
+
+
+
+
 /*----------------------------------Computadora------------------------*/
 
 @media(min-width:768px){
@@ -129,4 +216,24 @@ h1{
     display:inline-flex;
     justify-content: flex-end;
 }
+/*---------------------------------------------------------------------*/
+
+/*----------------------------------Seccion Compu------------------------*/
+.seccion{
+    display:flex;
+    flex-direction: row;
+    color: white;
 }
+.texto-secciones{
+    color: white;
+    text-align: center;
+}
+
+/*---------------------------------------------------------------------*/
+
+
+
+
+}
+
+/*---------------------------------------------------------------------*/

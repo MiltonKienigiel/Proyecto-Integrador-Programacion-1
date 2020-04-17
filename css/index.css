@@ -50,7 +50,7 @@ h1{
 
 .container-background{  
     width: 100%;
-    align-content: center;
+    display: flex;
 }
 .background{
     position: relative;
@@ -64,7 +64,8 @@ h1{
     font-size: large;
     font-family: 'Roboto', sans-serif;
     color: white;
-    text-align: center;
+    display: flex;
+    
 }
 .texto-fondo2{
     position: absolute;
@@ -75,7 +76,23 @@ h1{
     color: white;
     text-align: justify center;
 }
-
+/*----------------------------------Footer------------------------*/
+.footer ul li{
+    display:inline-flex ;
+    list-style-type: none;
+    padding:6px;
+    color: black;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+#logo-deezer{
+    width: 100px;
+    
+    display: inline-block;
+}
+.footer{
+    display:flex;
+}
 /*----------------------------------Computadora------------------------*/
 
 @media(min-width:768px){
@@ -97,8 +114,7 @@ h1{
     
     top: 5em;
     font-size: xx-large;
-    font-style: italic 300;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color:white;
 }
 .texto-fondo2{
@@ -106,8 +122,7 @@ h1{
     z-index: 2;
     top: 9em;
     font-size: x-large;
-    font-style: italic 300;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color:white;
 }
 .texto-inicio{

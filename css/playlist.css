@@ -67,7 +67,7 @@ h1{
     z-index: 1;
 }
 
-.texto-fondo1{
+.texto-fondo{
     position: absolute;
     z-index: 2;
     top: 5em;
@@ -76,9 +76,13 @@ h1{
     color: white;
     left: 0;
     right: 0;
-    text-align: center;
+    text-align: left;
+    left: 40px;
+    margin-top: 65px;
+    margin-left: 10px;
+    font-size: 43px;
 }
-.texto-fondo2{
+.texto-fondox{
     position: absolute;
     z-index: 2;
     top: 7em;
@@ -87,7 +91,10 @@ h1{
     color: white;
     left: 0;
     right: 0;
-    text-align: center;
+    text-align: left;
+    margin-top: 106px;
+    margin-left: 65px;
+    font-size: 38px;
 }
 .playlist-button{
     position: absolute;

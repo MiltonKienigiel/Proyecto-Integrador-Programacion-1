@@ -197,8 +197,9 @@ h1{
     justify-content:flex-end;
 }
 
+}
 .background{
-    width: 101%;
+  width: 101%;
 }
 .texto-fondo1{
     position: absolute;
@@ -239,6 +240,6 @@ h1{
 
 
 
-}
+
 
 /*---------------------------------------------------------------------*/

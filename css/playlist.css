@@ -1,0 +1,165 @@
+
+/*----------------------  Mobile First------------------*/
+
+.header{
+    background-color:white;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+a{
+    text-decoration-line:none ;
+    color: black;
+}
+
+h1{
+    font-family: 'Rancho', cursive;
+    color:black;
+    display: inline;
+    margin-left: 8px;
+    font-size: xx-large;
+    
+}
+#logo{
+    width: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.main-nav ul li{
+    display: none;
+    list-style-type: none;
+    padding:10px;
+    color: black;
+}
+
+/*---------------------------------------------------------------------*/
+
+
+/*----------------------  Botones Header ------------------*/
+.boton-generos{
+    border: black 4px inset;
+    border-radius: 5px 5px 10px 10px;
+}
+.boton-playlist{
+    border: black 4px inset;
+    border-radius: 5px 5px 10px 10px;
+}
+.boton-home{
+    border: black 4px inset;
+    border-radius: 5px 5px 10px 10px;
+}
+.texto-inicio{
+    border: black 4px inset;
+    border-radius: 5px 5px 10px 10px;
+}
+
+
+/*---------------------------------------------------------------------*/
+
+ /*----------------------  La imagen de fondo ------------------*/
+.container-background{  
+    width: 100%;
+}
+.background{
+    position: relative;
+    width: 107%;
+    z-index: 1;
+}
+
+.texto-fondo1{
+    position: absolute;
+    z-index: 2;
+    top: 5em;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.texto-fondo2{
+    position: absolute;
+    z-index: 2;
+    top: 7em;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.playlist-button{
+    position: absolute;
+    z-index: 2;
+}
+
+
+/*---------------------------------------------------------------------*/
+
+
+
+
+/*----------------------------------Footer------------------------*/
+.footer ul li{
+    display:inline-flex ;
+    list-style-type: none;
+    padding:6px;
+    color: black;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+#logo-deezer{
+    width: 20%;
+    
+    display: inline-block;
+}
+.footer{
+    display:flex;
+    flex-direction: row;
+}
+
+/*---------------------------------------------------------------------*/
+
+
+
+
+/*----------------------------------Computadora------------------------*/
+
+@media(min-width:768px){
+    
+.main-nav ul li{
+    display:inline-flex ;
+    list-style-type: none;
+    padding:6px;
+    color: black;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+
+.background{
+    width: 101%;
+}
+.texto-fondo1{
+    position: absolute;
+    z-index: 2;
+    
+    top: 5em;
+    font-size: xx-large;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+}
+.texto-fondo2{
+    position: absolute;
+    z-index: 2;
+    top: 9em;
+    font-size: x-large;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+}
+.texto-inicio{
+    display:inline-flex;
+    justify-content: flex-end;
+}
+/*---------------------------------------------------------------------*/
+}

@@ -129,18 +129,21 @@ h1{
     display:inline-flex ;
     list-style-type: none;
     padding:6px;
-    color: black;
+    color: white;
     flex-direction: row;
     justify-content:flex-end;
 }
 #logo-deezer{
     width: 20%;
-    
     display: inline-block;
+    margin-left: 10px;
 }
 .footer{
     display:flex;
     flex-direction: row;
+    background-color: black;
+    width: 100%;
+    position: absolute;
 }
 
 /*---------------------------------------------------------------------*/

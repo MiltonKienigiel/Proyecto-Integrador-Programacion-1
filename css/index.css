@@ -53,8 +53,24 @@ h1{
     border: black 4px inset;
     border-radius: 5px 5px 10px 10px;
 }
-
-
+.boton-home:hover{
+    background-color: darkcyan;  
+}
+.boton-playlist:hover{
+    background-color: darkmagenta;
+}
+.boton-generos:hover{
+    background-color: yellow;
+}
+.boton-home:hover a{
+    color: white;
+}
+.boton-playlist:hover a{
+    color: white;
+}
+.boton-generos:hover a{
+    color: black;
+}
 /*---------------------------------------------------------------------*/
 
  /*----------------------  La imagen de fondo ------------------*/

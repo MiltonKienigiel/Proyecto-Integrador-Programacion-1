@@ -26,6 +26,7 @@ h1{
     margin-top: 5px;
     margin-left: 5px;
 }
+
 .main-nav ul li{
     display: none;
     list-style-type: none;
@@ -52,6 +53,7 @@ h1{
 .texto-inicio{
     border: black 4px inset;
     border-radius: 5px 5px 10px 10px;
+    
 }
 .boton-home:hover{
     background-color: darkcyan;  
@@ -64,18 +66,23 @@ h1{
 }
 .boton-home:hover a{
     color: white;
+    text-decoration-line:none ;
 }
 .boton-playlist:hover a{
     color: white;
+    text-decoration-line:none ;
 }
 .boton-generos:hover a{
     color: black;
+
+    text-decoration-line:none ;
 }
 /*---------------------------------------------------------------------*/
 
  /*----------------------  La imagen de fondo ------------------*/
 
-.container-background{  
+.container-background{ 
+    display: none; 
     width: 100%;
 }
 .background{
@@ -126,8 +133,12 @@ h1{
 }
 
 /*---------------------------------------------------------------------*/
-
-
+/*----------------------------------Carousel------------------------*/
+.texto-carousel{
+    position: absolute;
+    top:8% ;
+}
+/*---------------------------------------------------------------------*/
 /*----------------------------------Top Canciones Celu------------------------*/
 .container-tracks{
     background-color: black;

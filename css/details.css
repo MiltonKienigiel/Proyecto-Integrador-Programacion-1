@@ -39,7 +39,9 @@
     text-decoration-line:none ;
 }
 /*---------------------------------------------------------------------*/
-
+.dos-columnas{display: grid;
+grid-template-columns: 1fr 1fr;}
+.img-artista{width: 100%;}
 /*---------------------------------Footer------------------------------*/
 .footer ul li{
     display:inline-flex ;

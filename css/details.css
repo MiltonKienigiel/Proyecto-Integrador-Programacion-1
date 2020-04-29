@@ -1,0 +1,65 @@
+/*----------------------  Botones Header ------------------*/
+.boton-generos{
+    border: black 4px inset;
+    border-radius: 5px 5px 10px 10px;
+}
+.boton-playlist{
+    border: black 4px inset;
+    border-radius: 5px 5px 10px 10px;
+}
+.boton-home{
+    border: black 4px inset;
+    border-radius: 5px 5px 10px 10px;
+}
+.texto-inicio{
+    border: black 4px inset;
+    border-radius: 5px 5px 10px 10px;
+    
+}
+.boton-home:hover{
+    background-color: darkcyan;  
+}
+.boton-playlist:hover{
+    background-color: darkmagenta;
+}
+.boton-generos:hover{
+    background-color: yellow;
+}
+.boton-home:hover a{
+    color: white;
+    text-decoration-line:none ;
+}
+.boton-playlist:hover a{
+    color: white;
+    text-decoration-line:none ;
+}
+.boton-generos:hover a{
+    color: black;
+
+    text-decoration-line:none ;
+}
+/*---------------------------------------------------------------------*/
+
+/*---------------------------------Footer------------------------------*/
+.footer ul li{
+    display:inline-flex ;
+    list-style-type: none;
+    padding:6px;
+    color: white;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+#logo-deezer{
+    width: 20%;
+    display: inline-block;
+    margin-left: 10px;
+}
+.footer{
+    display:flex;
+    flex-direction: row;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+}
+
+/*---------------------------------------------------------------------*/

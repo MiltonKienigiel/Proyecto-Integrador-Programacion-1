@@ -110,6 +110,7 @@ h1{
 .columna-doble{
     display: grid;
     grid-template-columns: 1fr 1fr;
+
 }
 
 
@@ -117,7 +118,6 @@ h1{
     background-image: url(../imagenes/Drake.jpg);
     background-repeat: no-repeat;
     width: 100%;
-
 }
 .que-album{
     text-align: center;

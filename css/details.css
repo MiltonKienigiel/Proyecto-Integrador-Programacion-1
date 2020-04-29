@@ -78,115 +78,20 @@ h1{
 }
 /*---------------------------------------------------------------------*/
 
- /*----------------------  La imagen de fondo ------------------*/
+ /*-----------------------------Artista detalle----------------------------*/
+.columna-doble{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
-.container-background{ 
-    display: none; 
+
+ .imagen-artista{
+    background-image: url(../imagenes/Drake.jpg);
+    background-repeat: no-repeat;
     width: 100%;
 }
-.background{
-    position: relative;
-    width: 107%;
-    z-index: 1;
-}
-.texto-fondo1{
-    position: absolute;
-    z-index: 2;
-    top: 5em;
-    font-size: large;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    left: 0;
-    right: 0;
-    text-align: center;
-}
-.texto-fondo2{
-    position: absolute;
-    z-index: 2;
-    top: 7em;
-    font-size: medium;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    left: 0;
-    right: 0;
-    text-align: center;
-}
-.playlist-button{
-    position: absolute;
-    z-index: 2;
-}
-
 
 /*---------------------------------------------------------------------*/
-
-/*----------------------------------Secciones Celu------------------------*/
-
-.seccion-celu{
-    display:flex;
-    flex-direction: column;
-    color: white;
-}
-.texto-secciones{
-    color: white;
-    text-align: center;
-}
-
-/*---------------------------------------------------------------------*/
-/*----------------------------------Carousel------------------------*/
-.texto-carousel{
-    position: absolute;
-    top:8% ;
-}
-/*---------------------------------------------------------------------*/
-/*----------------------------------Top Canciones Celu------------------------*/
-.container-tracks{
-    background-color: black;
-    margin: 20px;
-}
-.container1{
-    background-color: teal;
-    margin: 20px;
-    text-align: center;
-    
-}
-.imagen-perreo-sola{
-    width:100%;
-}
-.imagen-travesuras{
-    width: 100%;
-}
-/*---------------------------------------------------------------------*/
-
-/*----------------------------------Top Artistas Celu------------------------*/
-.container-artistas{
-    background-color: yellow;
-    margin: 20px;
-}
-.container2{
-    background-color: turquoise;
-    margin: 20px;
-    text-align: center;
-}
-.imagen-drake{
-    width: 100%;
-}
-/*---------------------------------------------------------------------*/
-
-/*----------------------------------Top Album Celu------------------------*/
-.container-album{
-    background-color:lightblue;
-    margin: 20px;
-}
-.container3{
-    background-color: lightcoral;
-    margin: 20px;
-    text-align: center;
-}
-.imagen-colores{
-    width: 100%;
-}
-/*---------------------------------------------------------------------*/
-
 
 
 
@@ -221,7 +126,7 @@ h1{
 
 @media(min-width:768px){
     
-.main-nav ul li{
+.main-nav ul li {
     display:inline-flex ;
     list-style-type: none;
     padding:6px;
@@ -229,56 +134,10 @@ h1{
     flex-direction: row;
     justify-content:flex-end;
 }
-
-
-.background{
-  width: 101%;
-}
-.texto-fondo1{
-    position: absolute;
-    z-index: 2;
-    
-    top: 5em;
-    font-size: xx-large;
-    font-family: 'Montserrat', sans-serif;
-    color:white;
-}
-.texto-fondo2{
-    position: absolute;
-    z-index: 2;
-    top: 9em;
-    font-size: x-large;
-    font-family: 'Montserrat', sans-serif;
-    color:white;
-}
 .texto-inicio{
     display:inline-flex;
     justify-content: flex-end;
 }
-/*---------------------------------------------------------------------*/
 
-/*----------------------------------Seccion Compu------------------------*/
-/*.seccion{
-    display:flex;
-    flex-direction: row;
-    color: white;
+
 }
-*/
-.texto-secciones{
-    color: white;
-    text-align: center;
-}
-.seccion{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr ;
-    color: white;
-}
-}
-/*---------------------------------------------------------------------*/
-
-
-
-
-
-
-/*---------------------------------------------------------------------*/

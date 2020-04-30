@@ -140,11 +140,13 @@ h1{
 .container-tracks{
     background-color: black;
     margin: 20px;
+    border-radius: 1%;
 }
 .container1{
     background-color: teal;
     margin: 20px;
     text-align: center;
+    border-radius: 2%;
     
 }
 .imagen-perreo-sola{
@@ -160,11 +162,13 @@ h1{
     background-color: black;
     margin: 20px;
     margin-bottom: 20px;
+    border-radius: 1%;
 }
 .container2{
     background-color: turquoise;
     margin: 20px;
     text-align: center;
+    border-radius: 2%;
 }
 .imagen-drake{
     width: 100%;
@@ -175,11 +179,13 @@ h1{
 .container-album{
     background-color:lightblue;
     margin: 20px;
+    border-radius: 1%;
 }
 .container3{
     background-color: lightcoral;
     margin: 20px;
     text-align: center;
+    border-radius: 2%;
 }
 .imagen-colores{
     width: 100%;

@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="./css/details.css">
-
-    <title>Artista</title>
+    <link rel="stylesheet" href="css/details.css">
+    <title>Detalles</title>
 </head>
 <body>
     <header class="header" >
@@ -24,56 +22,39 @@
                     <li>|</li>
                     <li>Inicar Sesión</li>
                 </div>
-                <li class="buscador"><input type="text" placeholder="Search.."></li>
+                <li class="buscador"><input type="text" placeholder="Search.."> </li><i class="fas fa-search"></i>
+                
             </ul>
         </nav>       
     </header>
-    <div class="container-background">
-        <h6 class="texto-fondo">¿Queres aprender sobre tus artistas favoritos?</h6>
-        <h7 class="texto-fondo2">¡Lee sobre ellos!</h7>
-        <img class="background" src="./imagenes/fondo3.jpg" alt="fondo3">
-    </div>
-    <div class="columna-doble">
-        <div> 
-            <h2>Drake</h2>
-            <p>drake es un cantante</p>
+    <div class="contenedor">
+        <div class="fila1">
+            <div class="columna1">
+                <h2>Drake</h2>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ducimus ea earum ad officia doloremque pariatur repudiandae? Blanditiis voluptate quisquam consectetur porro praesentium voluptatem accusamus, laborum veniam, modi suscipit obcaecati!</h3>
+            </div>
+            <div class="columna2">
+                <img src="./imagenes/drake-300.jpg" alt="Imagen de Drake">
+            </div>
         </div>
-        <div class="imagen-artista"> <img src="./imagenes/drake-300.jpg" alt="drake"></div>
-    </div>
-    <div class="otro-album">
-        <p class="que-album"> Otros Albumes</p>
-    </div>
-    <div class="algo-algo">
-        <div>
-            <h3>Albumes</h3>
-             <ul>
-                <li class="album-1"><h8 class="textos">Scorpion</h8>
-                    <img src="./imagenes/scorpion-drake.jpg" alt="scorpion-drake">
-                </li>
-                <li class="album-1"><h8 class="textos">More Life</h8>
-                     <img src="./imagenes/more-life.jpg" alt="more-life-drake">
-                    </li>
-                <li class="album-1"><h8 class="textos">Nothing Was The Same</h8>
-                    <img src="./imagenes/Nothing-Drake.jpg" alt="nothing-drake">
-                </li>
-            </ul>
+        <div class="fila2"><h2>Otros Albumes</h2>
         </div>
-        <div>
-            <h4>Canciones de Drake</h4>
-            <ul>
-                <li class="Cancion-1"><h8 class="textos">In My Feelings</h8>
-                    <img src="./imagenes/scorpion-drake.jpg" alt="In-My-Feelings"> 
-                </li>
-                <li class="Cancion-1"><h8 class="textos">Toosie Slide</h8>
-                    <img src="./imagenes/Drake-ToosieSlide.jpg" alt="toosie-slide">
-                </li>
-                <li class="Cancion-1"><h8 class="textos">God's Plan</h8>
-                 <img src="./imagenes/gods-plan.jpg" alt="gods-plan">   
-                </li>
-         </ul>
+        <div class="fila3">
+            <div>
+                <img src="./imagenes/scorpion-drake.jpg" alt="">
+                <h3>Scorpion</h3>
+            </div>
+            <div>
+                <img src="./imagenes/Nothing-Drake.jpg" alt="Imagen de album">
+                <h3>Nothing</h3>
+            </div>
+            <div>
+                <img src="./imagenes/more-life.jpg" alt="Imagen de album">
+                <h3>More-life</h3>
+            </div>
         </div>
     </div>
-
+    
     <footer class="footer">
         <img id="logo-deezer" src="./imagenes/Logo Deezer.png" alt="">
         <ul>
@@ -84,8 +65,5 @@
         </ul>
        
     </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

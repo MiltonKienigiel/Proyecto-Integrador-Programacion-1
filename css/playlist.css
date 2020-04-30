@@ -26,6 +26,7 @@ h1{
     margin-top: 5px;
     margin-left: 5px;
 }
+
 .main-nav ul li{
     display: none;
     list-style-type: none;
@@ -52,6 +53,7 @@ h1{
 .texto-inicio{
     border: black 4px inset;
     border-radius: 5px 5px 10px 10px;
+    
 }
 .boton-home:hover{
     background-color: darkcyan;  
@@ -64,12 +66,16 @@ h1{
 }
 .boton-home:hover a{
     color: white;
+    text-decoration-line:none ;
 }
 .boton-playlist:hover a{
     color: white;
+    text-decoration-line:none ;
 }
 .boton-generos:hover a{
     color: black;
+
+    text-decoration-line:none ;
 }
 
 /*---------------------------------------------------------------------*/
@@ -121,6 +127,29 @@ h1{
 
 /*---------------------------------------------------------------------*/
 
+
+/*----------------------------------Playlist------------------------*/
+.flex-container {
+    display: flex;
+    flex-direction: column;  
+
+  }
+  .playlist {
+      
+
+  }
+.songs {
+    width: 400px;
+    border: 5px solid darkgray;
+    padding: 5opx;
+    margin: 30px;
+    background-color: black;
+    color: whitesmoke;
+    
+}
+.album-cover{
+
+}
 
 
 

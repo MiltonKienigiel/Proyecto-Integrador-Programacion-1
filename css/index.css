@@ -74,7 +74,6 @@ h1{
 }
 .boton-generos:hover a{
     color: black;
-
     text-decoration-line:none ;
 }
 /*---------------------------------------------------------------------*/
@@ -121,11 +120,9 @@ h1{
 /*---------------------------------------------------------------------*/
 
 /*----------------------------------Secciones Celu------------------------*/
-
-.seccion-celu{
-    display:flex;
-    flex-direction: column;
-    color: white;
+.seccion{
+    display: grid;
+    grid-template-columns: 1fr ;
 }
 .texto-secciones{
     color: white;
@@ -160,8 +157,9 @@ h1{
 
 /*----------------------------------Top Artistas Celu------------------------*/
 .container-artistas{
-    background-color: yellow;
+    background-color: black;
     margin: 20px;
+    margin-bottom: 20px;
 }
 .container2{
     background-color: turquoise;

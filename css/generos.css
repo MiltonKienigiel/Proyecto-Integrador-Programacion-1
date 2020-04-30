@@ -1,0 +1,212 @@
+/*----------------------  Mobile First------------------*/
+
+.header{
+    background-color:white;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5%;
+}
+a{
+    text-decoration-line:none ;
+    color: black;
+}
+
+h1{
+    font-family: 'Rancho', cursive;
+    color:black;
+    display: inline;
+    margin-left: 8px;
+    font-size: xx-large;
+    
+}
+#logo{
+    width: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.main-nav ul li {
+    display: none;
+    list-style-type: none;
+    padding:10px;
+    color: black;
+}
+
+/*---------------------------------------------------------------------*/
+
+
+/*----------------------  Botones Header ------------------*/
+.boton-generos{
+    border: black 4px inset;
+    border-radius: 5px 5px 10px 10px;
+}
+.boton-playlist{
+    border: black 4px inset;
+    border-radius: 5px 5px 10px 10px;
+}
+.boton-home{
+    border: black 4px inset;
+    border-radius: 5px 5px 10px 10px;
+}
+.texto-inicio{
+    border: black 4px inset;
+    border-radius: 5px 5px 10px 10px;
+    
+}
+.boton-home:hover{
+    background-color: darkcyan;  
+}
+.boton-playlist:hover{
+    background-color: darkmagenta;
+}
+.boton-generos:hover{
+    background-color: yellow;
+}
+.boton-home:hover a{
+    color: white;
+    text-decoration-line:none ;
+}
+.boton-playlist:hover a{
+    color: white;
+    text-decoration-line:none ;
+}
+.boton-generos:hover a{
+    color: black;
+    text-decoration-line:none ;
+}
+/*---------------------------------------------------------------------*/
+/*----------------------------------Footer------------------------*/
+.footer ul li{
+    display:inline-flex ;
+    list-style-type: none;
+    padding:6px;
+    color: white;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+#logo-deezer{
+    width: 40%;
+    height: 60%;
+    display: inline-block;
+    margin-left: 10px;
+}
+.footer{
+    display:flex;
+    flex-direction: row;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    margin-top: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/*---------------------------------------------------------------------*/
+/*----------------------------------Secciones Celu------------------------*/
+.seccion{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.texto-secciones{
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+
+}
+.textos{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+/*---------------------------------------------------------------------*/
+/*----------------------------------Top Canciones Celu------------------------*/
+.container-tracks{
+    background-color: black;
+    border-radius: 15px;
+}
+.container1{
+    background-color: darkcyan;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 4px;
+}
+.container1 a:hover{
+    text-decoration: none;
+    color: grey;
+}
+.imagen-perreo-sola{
+    width:100%;
+}
+.imagen-travesuras{
+    width: 100%;
+}
+/*---------------------------------------------------------------------*/
+/*----------------------------------Computadora------------------------*/
+
+@media(min-width:768px){
+    
+    .main-nav ul li{
+        display:inline-flex ;
+        list-style-type: none;
+        padding:6px;
+        color: black;
+        flex-direction: row;
+        justify-content:flex-end;
+    }
+    
+    
+    .background{
+      width: 101%;
+    }
+    .texto-fondo1{
+        position: absolute;
+        z-index: 2;
+        top: 5em;
+        font-size: xx-large;
+        font-family: 'Montserrat', sans-serif;
+        color:white;
+    }
+    .texto-fondo2{
+        position: absolute;
+        z-index: 2;
+        top: 9em;
+        font-size: x-large;
+        font-family: 'Montserrat', sans-serif;
+        color:white;
+    }
+    .texto-inicio{
+        display:inline-flex;
+        justify-content: flex-end;
+    }
+
+/*----------------------------------Seccion Compu------------------------*/
+
+.texto-secciones{
+    color: white;
+    text-align: center;
+}
+.seccion{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+    color: white;
+}
+
+/*---------------------------------------------------------------------*/
+
+/*---------------------------------Footer--------------------------*/
+#logo-deezer{
+    width:10%;
+    height:20%;
+}
+
+/*---------------------------------------------------------------------*/
+
+
+
+
+
+
+}
+    

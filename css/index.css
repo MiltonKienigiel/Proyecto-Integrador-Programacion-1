@@ -7,6 +7,7 @@
     padding: 10px;
     display: flex;
     flex-direction: row;
+    border-radius: 15px;
 }
 a{
     text-decoration-line:none ;
@@ -127,7 +128,14 @@ h1{
 .texto-secciones{
     color: white;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
+
 }
+.textos{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
 
 /*---------------------------------------------------------------------*/
 /*----------------------------------Carousel------------------------*/
@@ -140,12 +148,18 @@ h1{
 .container-tracks{
     background-color: black;
     margin: 20px;
+    border-radius: 15px;
 }
 .container1{
     background-color: teal;
     margin: 20px;
     text-align: center;
+    border-radius: 15px;
     
+}
+.container1 a:hover{
+    text-decoration: none;
+    color: grey;
 }
 .imagen-perreo-sola{
     width:100%;
@@ -160,11 +174,17 @@ h1{
     background-color: black;
     margin: 20px;
     margin-bottom: 20px;
+    border-radius: 15px;
 }
 .container2{
     background-color: turquoise;
     margin: 20px;
     text-align: center;
+    border-radius: 15px;
+}
+.container2 a:hover{
+    text-decoration: none;
+    color: grey;
 }
 .imagen-drake{
     width: 100%;
@@ -173,13 +193,19 @@ h1{
 
 /*----------------------------------Top Album Celu------------------------*/
 .container-album{
-    background-color:lightblue;
+    background-color:black;
     margin: 20px;
+    border-radius: 15px;
 }
 .container3{
-    background-color: lightcoral;
+    background-color: white;
     margin: 20px;
     text-align: center;
+    border-radius: 15px;
+}
+.container3 a:hover{
+    text-decoration: none;
+    color: grey;
 }
 .imagen-colores{
     width: 100%;
@@ -200,6 +226,7 @@ h1{
 }
 #logo-deezer{
     width: 20%;
+    height: 60%;
     display: inline-block;
     margin-left: 10px;
 }
@@ -209,6 +236,8 @@ h1{
     background-color: black;
     width: 100%;
     position: absolute;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 /*---------------------------------------------------------------------*/
@@ -257,12 +286,7 @@ h1{
 /*---------------------------------------------------------------------*/
 
 /*----------------------------------Seccion Compu------------------------*/
-/*.seccion{
-    display:flex;
-    flex-direction: row;
-    color: white;
-}
-*/
+
 .texto-secciones{
     color: white;
     text-align: center;
@@ -272,12 +296,14 @@ h1{
     grid-template-columns:1fr 1fr 1fr ;
     color: white;
 }
+
+/*---------------------------------------------------------------------*/
+
+/*---------------------------------Footer--------------------------*/
+#logo-deezer{
+    width:10%;
+    height:20%;
 }
-/*---------------------------------------------------------------------*/
-
-
-
-
-
 
 /*---------------------------------------------------------------------*/
+}

@@ -83,7 +83,7 @@ h1{
 }
 .background{
     position: relative;
-    width: 107%;
+    width: 100%;
     z-index: 1;
 }
 
@@ -169,6 +169,8 @@ ul{list-style-type: none;}
     background-color: black;
     width: 100%;
     position: absolute;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 /*---------------------------------------------------------------------*/
@@ -192,6 +194,12 @@ ul{list-style-type: none;}
     display:inline-flex;
     justify-content: flex-end;
 }
+/*---------------------------------Footer--------------------------*/
+#logo-deezer{
+    width:10%;
+    height:20%;
+}
 
+/*---------------------------------------------------------------------*/
 
 }

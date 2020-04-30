@@ -7,6 +7,7 @@
     padding: 10px;
     display: flex;
     flex-direction: row;
+    border-radius: 5%;
 }
 a{
     text-decoration-line:none ;
@@ -127,6 +128,11 @@ h1{
 .texto-secciones{
     color: white;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
+
+}
+.textos{
+    font-family: 'Raleway', sans-serif;
 }
 
 /*---------------------------------------------------------------------*/
@@ -177,12 +183,12 @@ h1{
 
 /*----------------------------------Top Album Celu------------------------*/
 .container-album{
-    background-color:lightblue;
+    background-color:black;
     margin: 20px;
     border-radius: 1%;
 }
 .container3{
-    background-color: lightcoral;
+    background-color: white;
     margin: 20px;
     text-align: center;
     border-radius: 2%;

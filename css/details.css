@@ -96,13 +96,26 @@ h1{
     color: white;
     left: 0;
     right: 0;
-    text-align: left;
-    left: 40px;
+    text-align: center;
     margin-top: 65px;
     margin-left: 6px;
     font-size: 43px;
 }
 
+.texto-fondo2{
+    position: absolute;
+    z-index: 2;
+    top: 7em;
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 65px;
+    margin-left: 6px;
+    font-size: 43px;
+}
 
 /*---------------------------------------------------------------------*/
 

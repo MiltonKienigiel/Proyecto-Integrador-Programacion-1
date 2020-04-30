@@ -77,9 +77,8 @@ h1{
 /*---------------------------------------------------------------------*/
 /*------------------------Detalle Artista Celu----------------------*/
 .contenedor{
-    display:flex;
-    flex-direction: column;
-    z-index: 2;
+    display:grid;
+    grid-template-columns: 1fr;
 }
 
 .fila1{
@@ -110,7 +109,12 @@ h1{
     text-align: center;
     margin: 10px;
 }
-
+.contendor-imagen{
+    border-radius: 15px;
+    background-color: darkcyan;
+    color:white;
+    margin: 20px;
+}
 /*---------------------------------------------------------------------*/
 /*----------------------------------Footer------------------------*/
 .footer ul li{

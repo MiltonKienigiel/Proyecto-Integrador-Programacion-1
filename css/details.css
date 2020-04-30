@@ -6,6 +6,7 @@
     padding: 10px;
     display: flex;
     flex-direction: row;
+    border-radius: 15px;
 }
 a{
     text-decoration-line:none ;
@@ -34,8 +35,6 @@ h1{
 }
 
 /*---------------------------------------------------------------------*/
-
-
 /*----------------------  Botones Header ------------------*/
 .boton-generos{
     border: black 4px inset;
@@ -73,95 +72,49 @@ h1{
 }
 .boton-generos:hover a{
     color: black;
-
     text-decoration-line:none ;
 }
 /*---------------------------------------------------------------------*/
-
-/*----------------------  La imagen de fondo ------------------*/
-.container-background{width: 100%;
-}
-.background{
-    position: relative;
-    width: 100%;
-    z-index: 1;
+/*------------------------Detalle Artista Celu----------------------*/
+.contenedor{
+    display:grid;
+    grid-template-columns: 1fr;
 }
 
-.texto-fondo{
-    position: absolute;
-    z-index: 2;
-    top: 5em;
-    font-size: large;
-    font-family: 'Roboto', sans-serif;
+.fila1{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
     color: white;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin-top: 65px;
-    margin-left: 6px;
-    font-size: 43px;
+    border-radius: 15px;
+    padding: 10px;
 }
-
-.texto-fondo2{
-    position: absolute;
-    z-index: 2;
-    top: 7em;
-    font-size: medium;
-    font-family: 'Roboto', sans-serif;
+.fila2{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
     color: white;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin-top: 65px;
-    margin-left: 6px;
-    font-size: 43px;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 20px 20px 20px 20px;
 }
-
+.fila3{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 0px 20px 20px 20px;
+    text-align: center;
+    margin: 10px;
+}
+.contendor-imagen{
+    border-radius: 15px;
+    background-color: darkcyan;
+    color:white;
+}
 /*---------------------------------------------------------------------*/
-
- /*-----------------------------Artista detalle----------------------------*/
-.columna-doble{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-}
-
-
- .imagen-artista{
-    background-image: url(../imagenes/Drake.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
-}
-.que-album{
-    text-align: center;
-    font-style: italic;
-    font-family: sans-serif;
-}
-.algo-algo{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-}
-ul{list-style-type: none;}
-.album-2{display: block;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;}
-.album-1{
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;}
-/*---------------------------------------------------------------------*/
-
-
-
 /*----------------------------------Footer------------------------*/
 .footer ul li{
     display:inline-flex ;
@@ -173,6 +126,7 @@ ul{list-style-type: none;}
 }
 #logo-deezer{
     width: 20%;
+    height: 60%;
     display: inline-block;
     margin-left: 10px;
 }
@@ -187,32 +141,48 @@ ul{list-style-type: none;}
 }
 
 /*---------------------------------------------------------------------*/
-
-
-
-
 /*----------------------------------Computadora------------------------*/
 
 @media(min-width:768px){
     
-.main-nav ul li {
-    display:inline-flex ;
-    list-style-type: none;
-    padding:6px;
-    color: black;
+    .main-nav ul li{
+        display:inline-flex ;
+        list-style-type: none;
+        padding:6px;
+        color: black;
+        flex-direction: row;
+        justify-content:flex-end;
+    }
+    .texto-inicio{
+        display:inline-flex;
+        justify-content: flex-end;
+    }
+    /*---------------------------------------------------------------------*/
+
+/*------------------------Detalle Artista Compu----------------------*/
+
+.fila1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    
+}
+.fila2{
+    text-align: center;
+}
+.fila3{
+    display: flex;
     flex-direction: row;
-    justify-content:flex-end;
+    justify-content: space-evenly;
+    text-align: center;
 }
-.texto-inicio{
-    display:inline-flex;
-    justify-content: flex-end;
-}
-/*---------------------------------Footer--------------------------*/
+
+
+/*---------------------------------------------------------------------*/
+    /*---------------------------------Footer--------------------------*/
 #logo-deezer{
     width:10%;
     height:20%;
 }
-
 /*---------------------------------------------------------------------*/
-
 }

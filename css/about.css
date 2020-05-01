@@ -35,6 +35,8 @@ h1{
 }
 
 /*---------------------------------------------------------------------*/
+
+
 /*----------------------  Botones Header ------------------*/
 .boton-generos{
     border: black 4px inset;
@@ -57,9 +59,6 @@ h1{
     border-radius: 5px 5px 10px 10px;
     
 }
-.boton-about:hover{
-    background-color: grey;
-}
 .boton-home:hover{
     background-color: darkcyan;  
 }
@@ -68,6 +67,9 @@ h1{
 }
 .boton-generos:hover{
     background-color: yellow;
+}
+.boton-about:hover{
+    background-color: grey;
 }
 .boton-home:hover a{
     color: white;
@@ -86,44 +88,44 @@ h1{
     text-decoration-line:none ;
 }
 /*---------------------------------------------------------------------*/
-/*------------------------Detalle Artista Celu----------------------*/
-.contenedor{
-    display:grid;
-    grid-template-columns: 1fr;
+/*----------------------------------Secciones Celu------------------------*/
+.seccion{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.texto-secciones{
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+
+}
+.textos{
+    font-family: 'Raleway', sans-serif;
+    color: black;
 }
 
-.fila1{
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    color: white;
+
+/*---------------------------------------------------------------------*/
+/*----------------------------------Top Album Celu------------------------*/
+.container-album{
+    background-color:black;
+    margin: 20px;
     border-radius: 15px;
-    padding: 10px;
 }
-.fila2{
-    display: flex;
-    flex-direction: column;
-    background-color: darkcyan;
-    color: white;
-    border-radius: 15px;
-    padding: 5px;
-    margin: 20px 20px 20px 20px;
-}
-.fila3{
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    color: white;
-    border-radius: 15px;
-    padding: 5px;
-    margin: 0px 20px 20px 20px;
+.container3{
+    background-color:white;
+
+    margin: 20px;
     text-align: center;
-    margin: 10px;
-}
-.contendor-imagen{
     border-radius: 15px;
-    background-color: darkcyan;
-    color:white;
+}
+.container3 a:hover{
+    text-decoration: none;
+    color: grey;
+}
+.imagen-colores{
+    width: 100%;
+   
 }
 /*---------------------------------------------------------------------*/
 /*----------------------------------Footer------------------------*/
@@ -156,46 +158,36 @@ h1{
 
 @media(min-width:768px){
     
-    .main-nav ul li{
-        display:inline-flex ;
-        list-style-type: none;
-        padding:6px;
-        color: black;
-        flex-direction: row;
-        justify-content:flex-end;
-    }
-    .texto-inicio{
-        display:inline-flex;
-        justify-content: flex-end;
-    }
-    /*---------------------------------------------------------------------*/
-
-/*------------------------Detalle Artista Compu----------------------*/
-
-.fila1{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 20px;
-}
-.fila2{
-    text-align: center;
-}
-.fila3{
-    display: flex;
+.main-nav ul li{
+    display:inline-flex ;
+    list-style-type: none;
+    padding:6px;
+    color: black;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content:flex-end;
+}
+/*----------------------------------Seccion Compu------------------------*/
+
+.texto-secciones{
+    color: white;
     text-align: center;
 }
-.contenedor-imagen{
-    background-color: darkcyan;
-    border-radius: 15px;
+.seccion{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    color: white;
+}
+.texto-inicio{
+    display:inline-flex;
+    justify-content: flex-end;
 }
 
 /*---------------------------------------------------------------------*/
-    /*---------------------------------Footer--------------------------*/
+/*---------------------------------Footer--------------------------*/
 #logo-deezer{
     width:10%;
     height:20%;
 }
+
 /*---------------------------------------------------------------------*/
 }

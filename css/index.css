@@ -51,10 +51,18 @@ h1{
     border: black 4px inset;
     border-radius: 5px 5px 10px 10px;
 }
+.boton-about{
+    border: black 4px inset;
+    border-radius: 5px 5px 10px 10px;
+}
+
 .texto-inicio{
     border: black 4px inset;
     border-radius: 5px 5px 10px 10px;
     
+}
+.boton-about:hover{
+    background-color: grey;
 }
 .boton-home:hover{
     background-color: darkcyan;  
@@ -75,6 +83,10 @@ h1{
 }
 .boton-generos:hover a{
     color: black;
+    text-decoration-line:none ;
+}
+.boton-about:hover a{
+    color: white;
     text-decoration-line:none ;
 }
 /*---------------------------------------------------------------------*/

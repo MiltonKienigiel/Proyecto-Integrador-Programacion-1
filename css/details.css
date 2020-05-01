@@ -87,43 +87,41 @@ h1{
 }
 /*---------------------------------------------------------------------*/
 /*------------------------Detalle Artista Celu----------------------*/
-.contenedor{
-    display:grid;
-    grid-template-columns: 1fr;
-}
 
 .fila1{
-    display: flex;
-    flex-direction: column;
+    display:grid ;
+    grid-template-columns:1fr;
     background-color: black;
     color: white;
     border-radius: 15px;
-    padding: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
 }
 .fila2{
-    display: flex;
-    flex-direction: column;
+    
     background-color: darkcyan;
     color: white;
     border-radius: 15px;
     padding: 5px;
-    margin: 20px 20px 20px 20px;
+    text-align: center;
 }
 .fila3{
-    display: flex;
-    flex-direction: column;
+    
     background-color: black;
     color: white;
     border-radius: 15px;
     padding: 5px;
-    margin: 0px 20px 20px 20px;
     text-align: center;
     margin: 10px;
 }
-.contendor-imagen{
+.contendor-imagen img{
     border-radius: 15px;
-    background-color: darkcyan;
+    background-color: white;
     color:white;
+    width: 100%;
+}
+.imagen-d-none{
+    display: none;
 }
 /*---------------------------------------------------------------------*/
 /*----------------------------------Footer------------------------*/
@@ -181,16 +179,25 @@ h1{
     text-align: center;
 }
 .fila3{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
 }
 .contenedor-imagen{
-    background-color: darkcyan;
+    background-color: white;
     border-radius: 15px;
+    margin: 15px;
+    color: black;
 }
-
+.contenedor-imagen img{
+    width: 100%;
+}
+.imagen-d-none{
+    display: block;
+}
+.contenedor-imagen img:hover{
+    opacity: 50%;
+}
 /*---------------------------------------------------------------------*/
     /*---------------------------------Footer--------------------------*/
 #logo-deezer{

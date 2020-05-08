@@ -36,6 +36,7 @@ h1 a{
     list-style-type: none;
     padding:10px;
     color: black;
+    
 }
 .main-nav{
     display: none;
@@ -322,12 +323,20 @@ body{
     justify-content: flex-end;
 }
 /*---------------------------------------------------------------------*/
-
+/*---------------------------Carrusel---------------------------------*/
+.texto-carousel h5{
+    font-size: xx-large;
+}
+.texto-carousel p{
+    font-size: x-large;
+}
+/*---------------------------------------------------------------------*/
 /*----------------------------------Seccion Compu------------------------*/
 
 .texto-secciones{
     color: white;
     text-align: center;
+    font-size: x-large;
 }
 .seccion{
     display:grid;

@@ -1,12 +1,13 @@
 /*----------------------  Mobile First------------------*/
 
 .header{
-    background-color:white;
+    background-color:#263238;
     width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: row;
-    border-radius: 5%;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 a{
     text-decoration-line:none ;
@@ -15,11 +16,14 @@ a{
 
 h1{
     font-family: 'Rancho', cursive;
-    color:black;
+    color:white;
     display: inline;
     margin-left: 8px;
     font-size: xx-large;
     
+}
+h1 a{
+    color: white;
 }
 #logo{
     width: 50px;
@@ -33,29 +37,43 @@ h1{
     padding:10px;
     color: black;
 }
-
+.main-nav{
+    display: none;
+}
+.texto-inicio{
+    background-color: white;
+}
 /*---------------------------------------------------------------------*/
-
+/*-------------------------Body----------------------------*/
+body{
+    background-color: #000a12;
+}
+/*---------------------------------------------------------------------*/
 
 /*----------------------  Botones Header ------------------*/
 .boton-generos{
-    border: black 4px inset;
+    border: white 4px inset;
     border-radius: 5px 5px 10px 10px;
+    background-color: white;
 }
 .boton-playlist{
-    border: black 4px inset;
+    border: white 4px inset;
     border-radius: 5px 5px 10px 10px;
+    background-color: white;
 }
 .boton-home{
-    border: black 4px inset;
+    border: white 4px inset;
     border-radius: 5px 5px 10px 10px;
+    background-color: white;
 }
 .boton-about{
-    border: black 4px inset;
+    border: white 4px inset;
     border-radius: 5px 5px 10px 10px;
+    background-color: white;
 }
+
 .texto-inicio{
-    border: black 4px inset;
+    border: white 4px inset;
     border-radius: 5px 5px 10px 10px;
     
 }
@@ -124,7 +142,7 @@ h1{
     color: white;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-
+    margin-top: 15px;
 }
 .textos{
     font-family: 'Raleway', sans-serif;
@@ -133,7 +151,7 @@ h1{
 /*---------------------------------------------------------------------*/
 /*----------------------------------Top Canciones Celu------------------------*/
 .container-tracks{
-    background-color: black;
+    
     border-radius: 15px;
 }
 .container1{
@@ -147,11 +165,44 @@ h1{
     text-decoration: none;
     color: grey;
 }
+.container1 img:hover{
+    opacity: 50%;
+}
+.container2{
+    background-color: darkmagenta;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 4px;
+}
+.container2 a:hover{
+    text-decoration: none;
+    color: grey;
+}
+.container2 img:hover{
+    opacity: 50%;
+}
+.container3{
+    background-color: yellow;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 4px;
+}
+.container3 a:hover{
+    text-decoration: none;
+    color: grey;
+}
+.container3 img:hover{
+    opacity: 50%;
+}
 .imagen-perreo-sola{
     width:100%;
+    vertical-align: middle;
 }
 .imagen-travesuras{
     width: 100%;
+    vertical-align: middle;
 }
 /*---------------------------------------------------------------------*/
 /*----------------------------------Computadora------------------------*/
@@ -166,10 +217,12 @@ h1{
         flex-direction: row;
         justify-content:flex-end;
     }
-    
+    .main-nav{
+        display: block;
+    }
     
     .background{
-      width: 101%;
+      width: 100%;
     }
     .texto-fondo1{
         position: absolute;
@@ -194,9 +247,12 @@ h1{
 
 /*----------------------------------Seccion Compu------------------------*/
 
+
+
 .texto-secciones{
     color: white;
     text-align: center;
+    font-size: x-large;
 }
 .seccion{
     display:grid;

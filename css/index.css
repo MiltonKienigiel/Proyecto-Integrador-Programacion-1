@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: row;
     border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 a{
     text-decoration-line:none ;
@@ -107,46 +108,6 @@ body{
 }
 /*---------------------------------------------------------------------*/
 
- /*----------------------  La imagen de fondo ------------------*/
-
-.container-background{ 
-    display: none; 
-    width: 100%;
-}
-.background{
-    position: relative;
-    width: 107%;
-    z-index: 1;
-}
-.texto-fondo1{
-    position: absolute;
-    z-index: 2;
-    top: 5em;
-    font-size: large;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    left: 0;
-    right: 0;
-    text-align: center;
-}
-.texto-fondo2{
-    position: absolute;
-    z-index: 2;
-    top: 7em;
-    font-size: medium;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    left: 0;
-    right: 0;
-    text-align: center;
-}
-.playlist-button{
-    position: absolute;
-    z-index: 2;
-}
-
-
-/*---------------------------------------------------------------------*/
 
 /*----------------------------------Secciones Celu------------------------*/
 .seccion{
@@ -299,7 +260,7 @@ body{
 }
 
 .background{
-  width: 101%;
+  width: 100%;
 }
 .texto-fondo1{
     position: absolute;

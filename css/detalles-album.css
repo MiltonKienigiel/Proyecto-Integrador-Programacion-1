@@ -1,29 +1,34 @@
+
 /*----------------------  Mobile First------------------*/
 
 .header{
-    background-color:white;
+    background-color:#263238;
     width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: row;
     border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 a{
     text-decoration-line:none ;
     color: black;
 }
-
-h1{
+.texto-mashup{
     font-family: 'Rancho', cursive;
-    color:black;
     display: inline;
-    margin-left: 8px;
     font-size: xx-large;
-    
 }
+.texto-mashup a{
+    color: white;
+    text-decoration-line:none ;
+}
+.texto-botones{
+    font-family: 'Roboto', sans-serif;
+}
+
 #logo{
     width: 50px;
-    margin-top: 5px;
     margin-left: 5px;
 }
 
@@ -32,28 +37,45 @@ h1{
     list-style-type: none;
     padding:10px;
     color: black;
+    
 }
-
-/*---------------------------------------------------------------------*/
-/*----------------------  Botones Header ------------------*/
-.boton-generos{
-    border: black 4px inset;
-    border-radius: 5px 5px 10px 10px;
-}
-.boton-playlist{
-    border: black 4px inset;
-    border-radius: 5px 5px 10px 10px;
-}
-.boton-home{
-    border: black 4px inset;
-    border-radius: 5px 5px 10px 10px;
-}
-.boton-about{
-    border: black 4px inset;
-    border-radius: 5px 5px 10px 10px;
+.main-nav{
+    display: none;
 }
 .texto-inicio{
-    border: black 4px inset;
+    background-color: white;
+}
+/*---------------------------------------------------------------------*/
+/*-------------------------Body----------------------------*/
+body{
+    background-color: #000a12;
+}
+/*---------------------------------------------------------------------*/
+
+/*----------------------  Botones Header ------------------*/
+.boton-generos{
+    border: white 4px inset;
+    border-radius: 5px 5px 10px 10px;
+    background-color: white;
+}
+.boton-playlist{
+    border: white 4px inset;
+    border-radius: 5px 5px 10px 10px;
+    background-color: white;
+}
+.boton-home{
+    border: white 4px inset;
+    border-radius: 5px 5px 10px 10px;
+    background-color: white;
+}
+.boton-about{
+    border: white 4px inset;
+    border-radius: 5px 5px 10px 10px;
+    background-color: white;
+}
+
+.texto-inicio{
+    border: white 4px inset;
     border-radius: 5px 5px 10px 10px;
     
 }
@@ -97,9 +119,12 @@ h1{
 }
 
 .imagen-album img{
-    width: 95%;
+    width: 100%;
     padding: 10px;
     
+}
+.texto-album{
+    font-family: 'Raleway', sans-serif;
 }
 
 /*----------------------------------Playlist------------------------*/
@@ -128,6 +153,7 @@ h1{
 }
 .song:hover{
     background-color: gray;
+    color: #aeea00;
 
 }
 .song-info {
@@ -178,6 +204,9 @@ h1{
         flex-direction: row;
         justify-content:flex-end;
     }
+    .main-nav{
+        display: block;
+    }
     .texto-inicio{
         display:inline-flex;
         justify-content: flex-end;
@@ -190,7 +219,7 @@ h1{
         text-align: left;
     }
     .texto-album{
-    padding-left: 20px;
+    padding: 20px;
 }
     /*---------------------------------Footer--------------------------*/
 #logo-deezer{

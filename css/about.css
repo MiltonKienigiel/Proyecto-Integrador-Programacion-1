@@ -1,29 +1,31 @@
 /*----------------------  Mobile First------------------*/
 
 .header{
-    background-color:white;
+    background-color:#263238;
     width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: row;
     border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 a{
     text-decoration-line:none ;
     color: black;
 }
-
-h1{
+.texto-mashup{
     font-family: 'Rancho', cursive;
-    color:black;
     display: inline;
-    margin-left: 8px;
     font-size: xx-large;
-    
 }
+.texto-mashup a{
+    color: white;
+    text-decoration-line:none ;
+}
+
+
 #logo{
     width: 50px;
-    margin-top: 5px;
     margin-left: 5px;
 }
 
@@ -32,32 +34,49 @@ h1{
     list-style-type: none;
     padding:10px;
     color: black;
+    
 }
-
-/*---------------------------------------------------------------------*/
-
-
-/*----------------------  Botones Header ------------------*/
-.boton-generos{
-    border: black 4px inset;
-    border-radius: 5px 5px 10px 10px;
-}
-.boton-playlist{
-    border: black 4px inset;
-    border-radius: 5px 5px 10px 10px;
-}
-.boton-home{
-    border: black 4px inset;
-    border-radius: 5px 5px 10px 10px;
-}
-.boton-about{
-    border: black 4px inset;
-    border-radius: 5px 5px 10px 10px;
+.main-nav{
+    display: none;
 }
 .texto-inicio{
-    border: black 4px inset;
+    background-color: white;
+}
+/*---------------------------------------------------------------------*/
+/*-------------------------Body----------------------------*/
+body{
+    background-color: #000a12;
+}
+/*---------------------------------------------------------------------*/
+/*----------------------  Botones Header ------------------*/
+.boton-generos{
+    border: white 4px inset;
+    border-radius: 5px 5px 10px 10px;
+    background-color: white;
+}
+.boton-playlist{
+    border: white 4px inset;
+    border-radius: 5px 5px 10px 10px;
+    background-color: white;
+}
+.boton-home{
+    border: white 4px inset;
+    border-radius: 5px 5px 10px 10px;
+    background-color: white;
+}
+.boton-about{
+    border: white 4px inset;
+    border-radius: 5px 5px 10px 10px;
+    background-color: white;
+}
+
+.texto-inicio{
+    border: white 4px inset;
     border-radius: 5px 5px 10px 10px;
     
+}
+.boton-about:hover{
+    background-color: grey;
 }
 .boton-home:hover{
     background-color: darkcyan;  
@@ -67,9 +86,6 @@ h1{
 }
 .boton-generos:hover{
     background-color: yellow;
-}
-.boton-about:hover{
-    background-color: grey;
 }
 .boton-home:hover a{
     color: white;
@@ -88,6 +104,7 @@ h1{
     text-decoration-line:none ;
 }
 /*---------------------------------------------------------------------*/
+
 /*----------------------------------Secciones Celu------------------------*/
 .seccion{
     display: grid;
@@ -114,7 +131,6 @@ h1{
 }
 .container3{
     background-color:white;
-
     margin: 20px;
     text-align: center;
     border-radius: 15px;
@@ -123,8 +139,12 @@ h1{
     text-decoration: none;
     color: grey;
 }
+.container3 img:hover{
+    opacity: 50%;
+}
 .imagen-colores{
     width: 100%;
+    vertical-align: middle;
    
 }
 /*---------------------------------------------------------------------*/
@@ -158,24 +178,30 @@ h1{
 
 @media(min-width:768px){
     
-.main-nav ul li{
-    display:inline-flex ;
-    list-style-type: none;
-    padding:6px;
-    color: black;
-    flex-direction: row;
-    justify-content:flex-end;
-}
-/*----------------------------------Seccion Compu------------------------*/
+    .main-nav ul li{
+        display:inline-flex ;
+        list-style-type: none;
+        padding:6px;
+        color: black;
+        flex-direction: row;
+        justify-content:flex-end;
+    }
+    .main-nav{
+        display: block;
+    }
+    
+    /*----------------------------------Seccion Compu------------------------*/
 
 .texto-secciones{
     color: white;
     text-align: center;
+    font-size: x-large;
 }
 .seccion{
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
     color: white;
+    width: 100%;
 }
 .texto-inicio{
     display:inline-flex;
@@ -191,3 +217,4 @@ h1{
 
 /*---------------------------------------------------------------------*/
 }
+

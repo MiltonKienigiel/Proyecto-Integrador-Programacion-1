@@ -1,3 +1,4 @@
+
 /*----------------------  Mobile First------------------*/
 
 .header{
@@ -13,21 +14,19 @@ a{
     text-decoration-line:none ;
     color: black;
 }
-
-h1{
+.texto-mashup{
     font-family: 'Rancho', cursive;
-    color:white;
     display: inline;
-    margin-left: 8px;
     font-size: xx-large;
-    
 }
-h1 a{
+.texto-mashup a{
     color: white;
+    text-decoration-line:none ;
 }
+
+
 #logo{
     width: 50px;
-    margin-top: 5px;
     margin-left: 5px;
 }
 
@@ -36,6 +35,7 @@ h1 a{
     list-style-type: none;
     padding:10px;
     color: black;
+    
 }
 .main-nav{
     display: none;

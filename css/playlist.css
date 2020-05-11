@@ -6,9 +6,10 @@
     width: 100%;
     padding: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border-radius: 15px;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 a{
     text-decoration-line:none ;
@@ -29,20 +30,27 @@ a{
     width: 50px;
     margin-left: 5px;
 }
-
+.main-nav2{
+    text-align: center;
+}
 .main-nav ul li {
-    display: none;
+
     list-style-type: none;
     padding:10px;
     color: black;
     
 }
+.main-nav ul{
+    display:flex;
+
+}
 .main-nav{
-    display: none;
+    display:none;
 }
 .texto-inicio{
     background-color: white;
 }
+
 /*---------------------------------------------------------------------*/
 /*-------------------------Body----------------------------*/
 body{
@@ -118,12 +126,12 @@ body{
 .texto-fondo{
     position: absolute;
     z-index: 2;
-    top: 5em;
+    top: 12em;
     font-family: 'Raleway', sans-serif;
     color: white;
     left: 0;
     right: 0;
-    text-align: left;
+    text-align: center;
     margin-top: 45px;
     margin-left: 20px;
     font-size: large;
@@ -131,13 +139,13 @@ body{
 .texto-fondox{
     position: absolute;
     z-index: 2;
-    top: 7em;
+    top: 15em;
     font-size: medium;
     font-family: 'Raleway', sans-serif;
     color: white;
     left: 0;
     right: 0;
-    text-align: left;
+    text-align: center;
     margin-top: 55px;
     margin-left: 25px;
 }
@@ -227,17 +235,28 @@ body{
 
 @media(min-width:768px){
     
-.main-nav ul li{
-    display:inline-flex ;
-    list-style-type: none;
-    padding:6px;
-    color: black;
-    flex-direction: row;
-    justify-content:flex-end;
-}
-.main-nav{
-    display: block  ;
-}
+    .header{
+        display: flex;
+        flex-direction: row;
+    }
+    .main-nav ul li{
+        display:inline-flex ;
+        list-style-type: none;
+        padding:6px;
+        color: black;
+        flex-direction: row;
+        justify-content:flex-end;
+    }
+    .main-nav{
+        display: block;
+    }
+    .main-nav2{
+        display: none;
+    }
+    .ul-margin{
+        margin-top: none;
+    }
+    
 .background{
     width: 100%;
 }

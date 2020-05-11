@@ -6,9 +6,10 @@
     width: 100%;
     padding: 10px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border-radius: 15px;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 a{
     text-decoration-line:none ;
@@ -23,28 +24,34 @@ a{
     color: white;
     text-decoration-line:none ;
 }
-.texto-botones{
-    font-family: 'Roboto', sans-serif;
-}
+
 
 #logo{
     width: 50px;
     margin-left: 5px;
 }
-
+.main-nav2{
+    text-align: center;
+}
 .main-nav ul li {
-    display: none;
+
     list-style-type: none;
     padding:10px;
     color: black;
     
 }
+.main-nav ul{
+    display:flex;
+
+}
 .main-nav{
-    display: none;
+    display:none;
 }
 .texto-inicio{
     background-color: white;
 }
+
+/*---------------------------------------------------------------------*/
 /*---------------------------------------------------------------------*/
 /*-------------------------Body----------------------------*/
 body{
@@ -196,6 +203,10 @@ body{
 
 @media(min-width:768px){
     
+    .header{
+        display: flex;
+        flex-direction: row;
+    }
     .main-nav ul li{
         display:inline-flex ;
         list-style-type: none;
@@ -207,6 +218,13 @@ body{
     .main-nav{
         display: block;
     }
+    .main-nav2{
+        display: none;
+    }
+    .ul-margin{
+        margin-top: none;
+    }
+    
     .texto-inicio{
         display:inline-flex;
         justify-content: flex-end;

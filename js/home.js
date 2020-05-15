@@ -1,5 +1,5 @@
 window.addEventListener("load", function(){
-    var menu = document.querySelector("toggle-menu");
+    var menu = document.querySelector(".toggle-menu");
 
     var navegacion = document.querySelector("div.main-nav2");
     

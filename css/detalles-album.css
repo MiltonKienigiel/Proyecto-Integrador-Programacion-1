@@ -10,6 +10,7 @@
     border-radius: 15px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    box-sizing: border-box;
 }
 a{
     text-decoration-line:none ;
@@ -128,7 +129,12 @@ body{
 .imagen-album img{
     width: 100%;
     padding: 10px;
+
     
+}
+.imagen-album{
+    display: flex;
+    justify-content: center;
 }
 .texto-album{
     font-family: 'Raleway', sans-serif;

@@ -9,6 +9,7 @@
     border-radius: 15px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
+    box-sizing: border-box;
 }
 a{
     text-decoration-line:none ;

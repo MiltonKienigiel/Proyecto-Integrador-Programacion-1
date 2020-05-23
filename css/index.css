@@ -51,7 +51,9 @@ a{
 .texto-inicio{
     background-color: white;
 }
-
+.fa-bars{
+    color: white;
+}
 /*---------------------------------------------------------------------*/
 /*-------------------------Body----------------------------*/
 body{
@@ -129,9 +131,31 @@ body{
 }
 .textos{
     font-family: 'Raleway', sans-serif;
-    color: black;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
 }
 
+.textos2{
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+    display: flex;
+    align-self: flex-start;
+    padding-left:10px;
+    font-size: small;
+}
+.textos3{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(168, 161, 161);
+    display: flex;
+    align-self: flex-start;
+    padding-left:10px;
+    font-size: smaller;
+}
+.arrows{
+    display: none;
+}
 
 /*---------------------------------------------------------------------*/
 /*----------------------------------Carousel------------------------*/
@@ -140,6 +164,7 @@ body{
     top:8% ;
 }
 /*---------------------------------------------------------------------*/
+
 /*----------------------------------Top Canciones Celu------------------------*/
 .container-tracks{
     
@@ -147,15 +172,17 @@ body{
     border-radius: 15px;
 }
 .container1{
-    background-color: teal;
+  /*  background-color: teal; */
     margin: 20px;
     text-align: center;
-    border-radius: 15px;
-    
+    border-radius: 15px;   
 }
-.container1 a:hover{
-    text-decoration: none;
-    color: grey;
+.container1 a{
+    color: white;
+}
+
+.container1 img{
+    border-radius: 5px;
 }
 .container1 img:hover{
     opacity: 50%;
@@ -176,14 +203,16 @@ body{
     border-radius: 15px;
 }
 .container2{
-    background-color: turquoise;
+   /* background-color: turquoise; */
     margin: 20px;
     text-align: center;
     border-radius: 15px;
 }
-.container2 a:hover{
-    text-decoration: none;
-    color: grey;
+.container2 a{
+    color: white;
+}
+.container2 img{
+    border-radius: 5px;
 }
 .container2 img:hover{
     opacity: 50%;
@@ -200,14 +229,16 @@ body{
     border-radius: 15px;
 }
 .container3{
-    background-color: white;
+   /* background-color: white; */
     margin: 20px;
     text-align: center;
     border-radius: 15px;
 }
-.container3 a:hover{
-    text-decoration: none;
-    color: grey;
+.container3 a{
+    color: white;
+}
+.container3 img{
+    border-radius: 5px;
 }
 .container3 img:hover{
     opacity: 50%;
@@ -299,16 +330,49 @@ body{
 /*----------------------------------Seccion Compu------------------------*/
 
 .texto-secciones{
+
     color: white;
-    text-align: center;
+    text-align: left;
     font-size: x-large;
+    
 }
 .seccion{
     display:grid;
-    grid-template-columns:1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    margin-left:70px ;
+    margin-right:70px;
+}
+.titulo-seccion{
+    display: flex;
+    margin-left:90px ;
+    margin-right: 90px;
+    justify-content: space-between;
+
+}
+.arrows{
+    display: block;
+    border-radius: 5px;
+    height: max-content;
+}
+.fas{
     color: white;
 }
+/*---------------------------------------------------------------------*/
 
+/*------------------------------Containers PC---------------------------*/
+.container-artistas{
+    margin-top: 50px;
+}
+
+.container-album{
+    margin-top: 50px;
+}
+.container-tracks{
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+}
 /*---------------------------------------------------------------------*/
 
 /*---------------------------------Footer--------------------------*/

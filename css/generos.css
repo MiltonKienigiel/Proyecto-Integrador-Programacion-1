@@ -149,26 +149,34 @@ body{
 }
 .texto-secciones{
     color: white;
-    text-align: center;
+    text-align: left;
     font-family: 'Raleway', sans-serif;
     margin-top: 15px;
+    margin-left: 20px;
+    font-size: xx-large;
 }
 .textos{
     font-family: 'Raleway', sans-serif;
-    color: black;
+    color: white;
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
 }
 /*---------------------------------------------------------------------*/
 /*----------------------------------Top Canciones Celu------------------------*/
 .container-tracks{
-    
+
     border-radius: 15px;
 }
 .container1{
-    background-color: darkcyan;
+    
     margin: 20px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 4px;
+}
+.container1 img{
+    border-radius: 15px;
 }
 .container1 a:hover{
     text-decoration: none;
@@ -177,34 +185,7 @@ body{
 .container1 img:hover{
     opacity: 50%;
 }
-.container2{
-    background-color: darkmagenta;
-    margin: 20px;
-    text-align: center;
-    border-radius: 10px;
-    padding: 4px;
-}
-.container2 a:hover{
-    text-decoration: none;
-    color: grey;
-}
-.container2 img:hover{
-    opacity: 50%;
-}
-.container3{
-    background-color: yellow;
-    margin: 20px;
-    text-align: center;
-    border-radius: 10px;
-    padding: 4px;
-}
-.container3 a:hover{
-    text-decoration: none;
-    color: grey;
-}
-.container3 img:hover{
-    opacity: 50%;
-}
+
 .imagen-perreo-sola{
     width:100%;
     vertical-align: middle;
@@ -251,12 +232,12 @@ body{
 
 .texto-secciones{
     color: white;
-    text-align: center;
-    font-size: x-large;
+    text-align: left;
+    font-size: xx-large;
 }
 .seccion{
     display:grid;
-    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
     color: white;
 }
 

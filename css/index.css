@@ -127,6 +127,7 @@ body{
     color: white;
     text-align: center;
     font-family: 'Raleway', sans-serif;
+    font-size: x-large;
     
 }
 .textos{
@@ -212,7 +213,7 @@ body{
     color: white;
 }
 .container2 img{
-    border-radius: 5px;
+    border-radius: 50%;
 }
 .container2 img:hover{
     opacity: 50%;

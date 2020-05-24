@@ -140,7 +140,7 @@ body{
     margin-left: -40px;
     text-align: center;
 }
-.mix{
+.añadir{
     background-color: crimson;
     color: white;
     border-radius: 5px;
@@ -148,7 +148,7 @@ body{
     list-style-type: none ;
     
 }
-.añadir{
+.mix{
     padding: 10px;
     list-style-type: none ;
     border: white 2px ;
@@ -215,6 +215,18 @@ body{
     border-color: rgb(56, 54, 54);
     border-width: thin;
 
+}
+.song a{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+}
+.song a:hover{
+    color: greenyellow;
+    text-decoration-line:underline ;
 }
 .d-none{
     display: none;
@@ -320,7 +332,7 @@ body{
     justify-content: space-between;
     margin-left: -40px;
 }
-.mix:hover{
+.añadir:hover{
     opacity: 60%;
 }
 .fila2{

@@ -124,13 +124,13 @@ body{
     background-color: black;
     color: white;
     border-radius: 15px;
+    
 }
 
 .imagen-album img{
     width: 100%;
-    padding: 10px;
-
-    
+    padding: 8px;
+    border-radius: 15px;
 }
 .imagen-album{
     display: flex;
@@ -138,28 +138,37 @@ body{
 }
 .texto-album{
     font-family: 'Raleway', sans-serif;
+    color: white;
 }
+.texto-album a{
+    color: white;
 
+}
+.texto-album a:hover{
+    text-decoration-line:underline ;
+}
 /*----------------------------------Playlist------------------------*/
 
 .playlist {
     display: grid;
     grid-template-columns: 1fr;
-    width: 100%;
+    
     background-color: black;
     border-radius: 15px;
     font-family: 'Roboto', sans-serif;
     color: white;
     margin-top: 10px;
     margin-bottom: 10px;
+
     padding: 10px;
+
 } 
 .song {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
     text-align: center;
-    border-style: solid; 
+    border-top: solid; 
     border-color: rgb(56, 54, 54);
     border-width: thin;
 
@@ -174,11 +183,48 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     justify-content: space-around;
-    border-style: solid; 
+    border-top: solid; 
     border-color:rgb(56, 54, 54);
     border-width: thin;
 }
+.texto-secciones{
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    
+}
 
+.textos2{
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+    display: flex;
+    align-self: flex-start;
+    font-size: small;
+}
+.acciones{
+    margin-left: -40px;
+    text-align: center;
+
+}
+.mix{
+    padding: 10px;
+    list-style-type: none ;
+    border: white 2px ;
+    
+}
+.añadir{
+    text-align: center;
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    list-style-type: none ;
+    
+}
+.añadir:hover{
+    opacity: 60%;
+}
 /*----------------------------------Footer------------------------*/
 .footer ul li{
     display:inline-flex ;
@@ -235,6 +281,13 @@ body{
         display:inline-flex;
         justify-content: flex-end;
     }
+    .texto-secciones{
+
+        color: white;
+        text-align: left;
+        font-size: x-large;
+        
+    }
     /*---------------------------------------------------------------------*/
     /*-----------------Header-toggle---------------------------------*/
 .toggle-menu{
@@ -246,10 +299,28 @@ body{
         display: grid;
         grid-template-columns: 15% 85%;
         text-align: left;
+        margin-right: 90px;
+        margin-left: 90px;
+        margin-top: 30px;
     }
     .texto-album{
     padding: 20px;
-}
+    }
+    .playlist{
+        margin-right: 90px;
+        margin-left: 90px;
+    }
+    .acciones{
+        display: flex;
+
+    }
+    .mix{
+        text-align: left;
+    }
+    .añadir{
+        text-align: left;
+        width: fit-content;
+    }
     /*---------------------------------Footer--------------------------*/
 #logo-deezer{
     width:10%;

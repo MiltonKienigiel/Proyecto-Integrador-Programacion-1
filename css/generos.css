@@ -170,7 +170,7 @@ body{
     text-decoration-line:none;
 }
 .boton-principal2:hover{
-    text-decoration-line:none;
+    text-decoration-line:underline;
     color: white;
 }
 .boton-explorar2{
@@ -192,6 +192,7 @@ body{
 }
 .boton-playlist2:hover{
     color: white;
+    text-decoration-line:underline;
 }
 .boton-about2{
     color: grey;
@@ -199,9 +200,11 @@ body{
     font-size: x-large;
     padding: 10px;
     text-decoration-line:none ;
+    
 }
 .boton-about2:hover{
     color: white;
+    text-decoration-line:underline; 
 }
 
 .centrar-objetos{
@@ -367,7 +370,7 @@ body{
     text-decoration-line:none;
 }
 .boton-principal2:hover{
-    text-decoration-line:none;
+    text-decoration-line:underline;
     color: white;
 }
 .boton-explorar2{

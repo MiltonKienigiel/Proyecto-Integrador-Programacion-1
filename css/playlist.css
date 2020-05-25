@@ -169,7 +169,7 @@ body{
     text-decoration-line:none;
 }
 .boton-principal2:hover{
-    text-decoration-line:none;
+    text-decoration-line:underline;
     color: white;
 }
 .boton-explorar2{
@@ -182,6 +182,7 @@ body{
 
 .boton-explorar2:hover{
     color: white;
+    text-decoration-line:underline;
 }
 .boton-playlist2{
     font-family: 'Raleway', sans-serif;
@@ -202,6 +203,7 @@ body{
 }
 .boton-about2:hover{
     color: white;
+    text-decoration-line:underline;
 }
 
 .centrar-objetos{

@@ -116,6 +116,115 @@ body{
     text-decoration-line:none ;
 }
 /*---------------------------------------------------------------------*/
+/*-------------------------Nuevo Header-------------------------*/
+#logo{
+    display: none;
+}
+
+.main-nav2{
+    display: none;
+}
+
+.logo{
+    width: 20px;
+}
+.centrar-objetos{
+    display: flex;
+    flex-direction: column;
+}
+.texto-mashup{
+    display: none;
+}
+/*-------------------------Nuevo Header Celu-------------------------*/
+.logo-titulo{
+    text-decoration-line:underline ;
+}
+.contenedor-header{
+    background-color:#263238;
+    width: 100%;
+    padding: 10px;
+   
+    border-radius: 15px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-titulo{
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+}
+
+.boton-principal2{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    padding: 10px;
+    text-decoration-line:none;
+}
+.boton-principal2:hover{
+    text-decoration-line:none;
+    color: white;
+}
+.boton-explorar2{
+    color: grey;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    padding: 10px;
+    text-decoration-line:none ;
+}
+.boton-explorar2:hover{
+    color: white;
+}
+.boton-playlist2{
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    color: grey;
+    padding: 10px;
+    text-decoration-line:none ;
+}
+.boton-playlist2:hover{
+    color: white;
+}
+.boton-about2{
+    color: grey;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    padding: 10px;
+    text-decoration-line:none ;
+}
+.boton-about2:hover{
+    color: white;
+}
+
+.centrar-objetos{
+    display: flex;   
+    
+
+    
+}
+
+/*-------------------------------HEADER INTENTO-----------------------*/
+    
+    
+.titulo-header{
+    font-family: 'Raleway', sans-serif;
+    font-size: xx-large;
+    color: white;
+    }
+   
+    .logo-titulo{
+        display: inline-flex;
+    }
+    /*---------------------------------------------------------------------*/
 /*----------------------------------Album celu-----------------------*/
 .album-data{
     display: grid;
@@ -294,6 +403,92 @@ body{
     display: none;
 }
 /*---------------------------------------------------------------------*/
+/*-------------------------Nuevo Header-------------------------*/
+.titulo-none{
+    display: none;
+}
+.contenedor-header{
+    background-color:#263238;
+    width: 100%;
+    padding: 10px;
+   
+    border-radius: 15px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo{
+    width: 40px;
+    height: 40px;
+}
+
+.boton-principal2{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    padding: 10px;
+    text-decoration-line:none;
+}
+.boton-principal2:hover{
+    text-decoration-line:none;
+    color: white;
+}
+.boton-explorar2{
+    color: grey;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    padding: 10px;
+    text-decoration-line:none ;
+}
+.boton-explorar2:hover{
+    color: white;
+}
+.boton-playlist2{
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    color: grey;
+    padding: 10px;
+    text-decoration-line:none ;
+}
+.boton-playlist2:hover{
+    color: white;
+}
+.boton-about2{
+    color: grey;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    padding: 10px;
+    text-decoration-line:none ;
+}
+.boton-about2:hover{
+    color: white;
+}
+
+.centrar-objetos{
+    display: flex;   
+    flex-direction:row ;    
+
+    
+}
+
+/*-------------------------------HEADER INTENTO-----------------------*/
+    
+    
+.titulo-header{
+    font-family: 'Raleway', sans-serif;
+    font-size: xx-large;
+    color: white;
+    }
+   
+    .logo-titulo{
+        display: inline-flex;
+    }
+    /*---------------------------------------------------------------------*/
     /*----------------------------------Album------------------------*/
     .album-data{
         display: grid;

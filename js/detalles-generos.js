@@ -19,7 +19,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/"+genero
 
     let artistaGenero = data.data
     let contenedorArtistas = document.querySelector(".seccion-artista")
-
+    
     for (const artista of artistaGenero) {
         contenedorArtistas.innerHTML += 
         `

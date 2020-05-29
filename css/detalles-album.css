@@ -256,6 +256,7 @@ body{
 .texto-album a:hover{
     text-decoration-line:underline ;
 }
+
 /*----------------------------------Playlist------------------------*/
 
 .playlist {
@@ -353,7 +354,6 @@ body{
     display:flex;
     flex-direction: row;
     background-color: black;
-    width: 100%;
     position: absolute;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;

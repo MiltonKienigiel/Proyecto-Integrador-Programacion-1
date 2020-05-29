@@ -5,7 +5,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart")
     .then(function(data){
         let artistas = data.artists.data
         let contenedorArtistas = document.querySelector(".seccion-artista");
-
+        
         for (const artista of artistas){
             
         
@@ -19,7 +19,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart")
 
                     <a class="textos" href="details.html?id=${artista.id}">${artista.name}</a>
 
-                    <div class="textos2">100.000 fans</div>
+                    <div class="textos2">Artista</div>
             </div>
         </div>
         `
@@ -50,7 +50,8 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart")
     }
         let tracks = data.tracks.data
         let contenedorTracks = document.querySelector(".seccion-canciones")
-
+    console.log(tracks);
+    
         for (const track of tracks) {
         contenedorTracks.innerHTML +=
         `
@@ -61,7 +62,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart")
                     </a>
                     <a class="textos" href="detalles-tracks.html?id=${track.id}">${track.title_short}</a> 
                     <div class="textos2">de ${track.artist.name}</div>
-                    <div class="textos3">Publicado el ${track.release_date}</div>
+                    <div class="textos3">Ranking: ${track.rank}</div>
                 </div>
             </div>
         `

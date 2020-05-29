@@ -223,7 +223,8 @@ body{
         display: inline-flex;
     }
     /*---------------------------------------------------------------------*/
-/*------------------------Detalle Artista Celu----------------------*/
+
+/*------------------------Detalle Cancion Celu----------------------*/
 
 .fila1{
     display:flex ;
@@ -235,6 +236,8 @@ body{
 }
 .columna1 img{
     border-radius: 15px;
+    width: 100%;
+    margin-top:20px ;
 }
 .columna2{
     text-align: center;
@@ -248,19 +251,19 @@ body{
     margin-left: -40px;
     text-align: center;
 }
-.añadir{
-    background-color: crimson;
-    color: white;
-    border-radius: 5px;
-    padding: 10px;
-    list-style-type: none ;
-    
-}
 .mix{
     padding: 10px;
     list-style-type: none ;
     border: white 2px ;
     
+}
+.añadir{
+
+    background-color: crimson;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    list-style-type: none ;
 }
 
 .fila2{
@@ -268,8 +271,9 @@ body{
     
     color: white;
     border-radius: 15px;
-    
-    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
 }
 
 .fila3{
@@ -279,6 +283,9 @@ body{
     padding: 5px;
     text-align: center;
 
+}
+.contenedor-imagen img{
+    width: 100%;
 }
 .contendor-imagen a{
     border-radius: 15px;
@@ -312,6 +319,7 @@ body{
     color: white;
     margin-top: 20px;
     margin-bottom: 20px;
+
     padding: 10px;
 } 
 .song {
@@ -324,18 +332,6 @@ body{
     border-width: thin;
 
 }
-.song a{
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 10px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-
-}
-.song a:hover{
-    color: greenyellow;
-    text-decoration-line:underline ;
-}
 .d-none{
     display: none;
 }
@@ -346,7 +342,7 @@ body{
 }
 .song-info {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     justify-content: space-around;
     border-style: solid; 
@@ -373,7 +369,6 @@ body{
     display:flex;
     flex-direction: row;
     background-color: black;
-    width: 100%;
     position: absolute;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -406,6 +401,7 @@ body{
     .ul-margin{
         margin-top: none;
     }
+    
     
     
     .texto-inicio{
@@ -504,26 +500,34 @@ body{
         display: inline-flex;
     }
     /*---------------------------------------------------------------------*/
-/*------------------------Detalle Artista Compu----------------------*/
+    /*------------------------Contenedor Total--------------------------------*/
+.contenedor{
+    margin-right: 90px;
+    margin-left: 90px;
+}
+/*---------------------------------------------------------------------*/
+/*------------------------Detalle Cancion Compu----------------------*/
 
 .fila1{
     display: flex;
     flex-direction: row;
-    margin: 30px;
 }
-
+.columna1 img{
+    width:20em;
+}
 .columna2{
     padding-left:20px;
     text-align: left;
 }
 .columna2 h2{
     font-size: 50px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 .acciones{
     display: flex;
     flex-direction: row;
     gap: 10px;
-    justify-content: space-between;
     margin-left: -40px;
 }
 .añadir:hover{
@@ -557,6 +561,10 @@ body{
 .song{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.song-info{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
 }
 .d-none{
     display: block;

@@ -246,7 +246,6 @@ body{
     display:flex;
     flex-direction: row;
     background-color: black;
-    width: 100%;
     position: absolute;
     margin-top: 20px;
     border-top-left-radius: 15px;

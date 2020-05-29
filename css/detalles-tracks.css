@@ -222,12 +222,7 @@ body{
         display: inline-flex;
     }
     /*---------------------------------------------------------------------*/
-/*------------------------Contenedor Total--------------------------------*/
-.contenedor{
-    margin-right: 90px;
-    margin-left: 90px;
-}
-/*---------------------------------------------------------------------*/
+
 /*------------------------Detalle Cancion Celu----------------------*/
 
 .fila1{
@@ -248,8 +243,18 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 .texto-gris{
-    color: grey;
+    color: rgb(179, 167, 167);
+    font-size: small;
     
+}
+.texto-a{
+ color: gray;  
+
+}
+.texto-a:hover{
+    text-decoration-line:underline ;
+    color: white;
+
 }
 .acciones{
     margin-left: -40px;
@@ -372,7 +377,6 @@ body{
     display:flex;
     flex-direction: row;
     background-color: black;
-    width: 100%;
     position: absolute;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -504,6 +508,12 @@ body{
         display: inline-flex;
     }
     /*---------------------------------------------------------------------*/
+    /*------------------------Contenedor Total--------------------------------*/
+.contenedor{
+    margin-right: 90px;
+    margin-left: 90px;
+}
+/*---------------------------------------------------------------------*/
 /*------------------------Detalle Cancion Compu----------------------*/
 
 .fila1{

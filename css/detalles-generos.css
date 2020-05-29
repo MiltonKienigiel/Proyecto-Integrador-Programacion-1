@@ -225,7 +225,15 @@ body{
     }
     /*---------------------------------------------------------------------*/
 /*----------------------------------Secciones Celu------------------------*/
-.seccion{
+.seccion-artista{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.seccion-album{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.seccion-playlist{
     display: grid;
     grid-template-columns: 1fr ;
 }
@@ -349,7 +357,6 @@ body{
     display:flex;
     flex-direction: row;
     background-color: black;
-    width: 100%;
     position: absolute;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -499,13 +506,28 @@ body{
     font-size: x-large;
     
 }
-.seccion{
+.seccion-artista{
     display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr;
     color: white;
     margin-left:90px ;
     margin-right:90px;
 }
+.seccion-album{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    margin-left:90px ;
+    margin-right:90px;
+}
+.seccion-playlist{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    margin-left:90px ;
+    margin-right:90px;
+}
+
 .titulo-seccion{
     display: flex;
     margin-left:110px ;

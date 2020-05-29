@@ -226,7 +226,23 @@ body{
     }
     /*---------------------------------------------------------------------*/
 /*----------------------------------Secciones Celu------------------------*/
-.seccion{
+.seccion-artista{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.seccion-album{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.seccion-canciones{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.seccion-playlist{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.seccion-podcast{
     display: grid;
     grid-template-columns: 1fr ;
 }
@@ -536,7 +552,35 @@ body{
     font-size: x-large;
     
 }
-.seccion{
+.seccion-artista{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    margin-left:70px ;
+    margin-right:70px;
+}
+.seccion-album{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    margin-left:70px ;
+    margin-right:70px;
+}
+.seccion-canciones{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    margin-left:70px ;
+    margin-right:70px;
+}
+.seccion-playlist{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    margin-left:70px ;
+    margin-right:70px;
+}
+.seccion-podcast{
     display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr;
     color: white;
@@ -573,6 +617,7 @@ body{
     margin-bottom: 40px;
 
 }
+
 /*---------------------------------------------------------------------*/
 
 /*---------------------------------Footer--------------------------*/

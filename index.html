@@ -55,7 +55,11 @@
                 <a class="boton-about2" href="about.html">About</a>
             </div>
             <div class="buscador">
-                <input  type="text" placeholder="Search..">
+                <form action="index.html" method="GET">
+                    <input type="text" name="busqueda" id="buscador">
+                    <input type="submit" value="Search" id="boton-busqueda">
+                </form>
+                
             </div>
             
             
@@ -121,8 +125,8 @@
                 </div>
         </div>
         
-            <div class="seccion">
-                <div>   
+            <div class="seccion-artista">
+               <!-- <div>   
                     <div class="container2">
                         <a href="details.html">
                             <img class="imagen-drake" src="./imagenes/drake4.jpg" alt="">
@@ -167,7 +171,7 @@
                         <div class="textos2">100.000 fans</div>
                     </div>
                 </div>
-                
+            -->
             </div>
     </div>
     
@@ -179,8 +183,8 @@
                     <i class="fas fa-chevron-right"></i>
                 </div>
         </div>
-        <div class="seccion">
-            <div>   
+        <div class="seccion-album">
+            <!--<div>   
                 <div class="container3">
                     <a href="detalles-album.html">
                         <img class="imagen-colores" src="./imagenes/Star boy.jpg" alt="">
@@ -224,7 +228,7 @@
                     <a class="textos" href="detalles-album.html">Lukas Graham</a>
                     <div class="textos2">50 canciones - 100.000 fans</div>
                 </div>
-            </div>
+            </div>-->
             
         </div>
     </div>
@@ -237,8 +241,8 @@
                     <i class="fas fa-chevron-right"></i>
                 </div>
         </div> 
-            <div class="seccion">
-                <div>    
+            <div class="seccion-canciones">
+                <!-- <div>    
                     <div class="container1">
                             <a href="detalles-tracks.html">
                                 <img class="imagen-perreo-sola" src="./imagenes/Cancion Yo perreo sola.jpg" alt="">
@@ -287,8 +291,8 @@
                         <div class="textos2">de Bad Bunny</div>
                         <div class="textos3">Publicado el 22/05/2020</div>
                     </div>
-                </div>
-                
+                </div>-->
+            
             </div>
     </div>
     <div class="container-album">
@@ -299,9 +303,9 @@
                     <i class="fas fa-chevron-right"></i>
                 </div>
         </div>
-        <div class="seccion">
+        <div class="seccion-playlist">
             
-            <div>   
+          <!--  <div>   
                 <div class="container3">
                     <a href="detalles-album.html">
                         <img class="imagen-colores" src="./imagenes/Star boy.jpg" alt="">
@@ -345,7 +349,67 @@
                     <a class="textos" href="detalles-album.html">Lukas Graham</a>
                     <div class="textos2">50 canciones - 100.000 fans</div>
                 </div>
+            </div>-->
+                
+                   
+        
+        </div>
+    </div>
+    <div class="container-album">
+        <div class="titulo-seccion">
+            <div class="texto-secciones">Podcasts</div>
+                <div class="arrows">
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+        </div>
+        <div class="seccion-podcast">
+            
+          <!--  <div>   
+                <div class="container3">
+                    <a href="detalles-album.html">
+                        <img class="imagen-colores" src="./imagenes/Star boy.jpg" alt="">
+                    </a>
+                    <a class="textos" href="detalles-album.html">Star Boy</a>
+                    <div class="textos2">50 canciones - 100.000 fans</div>
+                </div>
             </div>
+            <div>
+                <div class="container3">
+                    <a href="detalles-album.html">
+                        <img class="imagen-colores" src="./imagenes/Lukas graham.jpg" alt="">
+                    </a>
+                    <a class="textos" href="detalles-album.html">Lukas Graham</a>
+                    <div class="textos2">50 canciones - 100.000 fans</div>
+                </div>
+            </div>
+            <div>
+                <div class="container3">
+                    <a href="detalles-album.html">
+                        <img class="imagen-colores" src="./imagenes/Good For You.jpg" alt="">
+                    </a>
+                    <a class="textos" href="detalles-album.html">Good For You</a>
+                    <div class="textos2">50 canciones - 100.000 fans</div>
+                </div>
+            </div>
+            <div>   
+                <div class="container3">
+                    <a href="detalles-album.html">
+                        <img class="imagen-colores" src="./imagenes/Star boy.jpg" alt="">
+                    </a>
+                    <a class="textos" href="detalles-album.html">Star Boy</a>
+                    <div class="textos2">50 canciones - 100.000 fans</div>
+                </div>
+            </div>
+            <div>
+                <div class="container3">
+                    <a href="detalles-album.html">
+                        <img class="imagen-colores" src="./imagenes/Lukas graham.jpg" alt="">
+                    </a>
+                    <a class="textos" href="detalles-album.html">Lukas Graham</a>
+                    <div class="textos2">50 canciones - 100.000 fans</div>
+                </div>
+            </div>-->
                 
                    
         
@@ -361,9 +425,13 @@
         </ul>
        
     </footer>
-    <script src="js/general.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/general.js"></script>
+    <script src="js/index.js"></script>
+
 </body>
 </html>

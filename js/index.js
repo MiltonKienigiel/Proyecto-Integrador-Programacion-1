@@ -1,14 +1,14 @@
-fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart")
-    .then(function(response){
-        return response.json()
-    })
-    .then(function(data){
+fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0")
+.then(function(response){
+    return response.json()
+}).then(function(data){
+
         let artistas = data.artists.data
         let contenedorArtistas = document.querySelector(".seccion-artista");
         
         for (const artista of artistas){
             
-        
+            
         
         contenedorArtistas.innerHTML += `
         <div> 
@@ -50,14 +50,14 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart")
     }
         let tracks = data.tracks.data
         let contenedorTracks = document.querySelector(".seccion-canciones")
-    console.log(tracks);
+    
     
         for (const track of tracks) {
         contenedorTracks.innerHTML +=
         `
             <div>
                 <div class="container1">
-                    <a href="detalles-album.html?id=${track.id}">
+                    <a href="detalles-tracks.html?id=${track.id}">
                         <img class="imagen-perreo-sola" src="${track.album.cover_big}" alt="">
                     </a>
                     <a class="textos" href="detalles-tracks.html?id=${track.id}">${track.title_short}</a> 
@@ -69,16 +69,18 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart")
         }
         let playlists = data.playlists.data
         let contenedorPlaylists = document.querySelector(".seccion-playlist");
+        console.log(playlists);
 
+        
         for (const playlist of playlists) {
             contenedorPlaylists.innerHTML +=
             `
             <div>
                 <div class="container3">
-                    <a href="detalles-album.html?id=${playlist.id}">
+                    <a href="detalles-playlist.html?id=${playlist.id}">
                         <img class="imagen-colores" src="${playlist.picture_big}" alt="">
                     </a>
-                    <a class="textos" href="detalles-album.html?id=${playlist.id}">${playlist.title}</a>
+                    <a class="textos" href="detalles-playlist.html?id=${playlist.id}">${playlist.title}</a>
                     <div class="textos2">${playlist.user.name}</div>
                 </div>
             </div>
@@ -87,8 +89,12 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart")
         let podcasts = data.podcasts.data
         let contenedorPodcasts = document.querySelector(".seccion-podcast");
 
+        console.log(podcasts);
+        
+
+
         for (const podcast of podcasts) {
-            console.log(podcast);
+            
 
             contenedorPodcasts.innerHTML+=
             `

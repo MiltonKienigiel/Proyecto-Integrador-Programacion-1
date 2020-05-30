@@ -70,4 +70,6 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/"+genero
         `
     }
     
+}).catch(function(error){
+    console.error(error)
 })

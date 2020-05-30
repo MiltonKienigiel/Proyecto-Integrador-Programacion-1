@@ -1,3 +1,4 @@
+
 //obtengo el query string
 let queryString = window.location.search
 
@@ -6,6 +7,8 @@ let objetoQuery = new URLSearchParams(queryString);
 
 //ahora si obtengo el id del album
 var albumId = objetoQuery.get('id');
+
+
 
 
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/"+albumId)
@@ -17,12 +20,13 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/"+albumI
         
         let contenedorData = document.querySelector(".fila1");
         let album = data
+        console.log(album);
         
         contenedorData.innerHTML =
     `
     <div class="fila1">
             <div class="columna1">
-                <img class="imagen-cancion" src="${album.cover_big  }" alt="Imagen de Album ${album.title}">
+                <img class="imagen-cancion" src="${album.cover_big}" alt="Imagen de Album ${album.title}">
             </div>
             <div class="columna2">
                 <h3 class="texto-gris">${album.type}</h3>
@@ -66,13 +70,13 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/"+albumI
         let contenedorAlbumes= document.querySelector(".fila3");
         console.log(Albumes);
         
-        for (const album of Albumes) {
+        for (const albums of Albumes) {
              contenedorAlbumes.innerHTML += `
         
             
                 <div class="contenedor-imagen">
-                    <a href="detalles-album.html?id=${album.id}"><img src="${album.cover_big}" alt="Imagen de album"></a>
-                    <h3 class="texto-album">${album.title}</h3>
+                    <a href="detalles-album.html?id=${albums.id}"><img src="${albums.cover_big}" alt="Imagen de album"></a>
+                    <h3 class="texto-album">${albums.title}</h3>
                 </div>
                 
         `

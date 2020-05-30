@@ -8,7 +8,7 @@ let objetoQuery = new URLSearchParams(queryString);
 var albumId = objetoQuery.get('id');
 
 
-fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/" + albumId)
+fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/"+albumId)
     .then(function(response){
         return response.json()
     })
@@ -22,7 +22,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/" + albu
     `
     <div class="fila1">
             <div class="columna1">
-                <img class="imagen-cancion" src="${album.cover_big}" alt="Imagen de Album ${album.title}">
+                <img class="imagen-cancion" src="${album.cover_big  }" alt="Imagen de Album ${album.title}">
             </div>
             <div class="columna2">
                 <h3 class="texto-gris">${album.type}</h3>

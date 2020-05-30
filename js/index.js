@@ -94,7 +94,16 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0")
 
 
         for (const podcast of podcasts) {
+
             
+            let info = podcast.description
+                if(info.length > 100){
+                    console.log(info);
+
+                    let infoParte = info.slice(0,100);
+                    info = infoParte + '...'
+                    
+                }
 
             contenedorPodcasts.innerHTML+=
             `
@@ -104,7 +113,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0")
                         <img class="imagen-colores" src="${podcast.picture_big}" alt="">
                     </a>
                     <a class="textos" href="detalles-album.html?id=${podcast.id}">${podcast.title}</a>
-                    <div class="textos2">${podcast.description} - ${podcast.fans} fans</div>
+                    <div class="textos2">${info} - ${podcast.fans} fans</div>
                 </div>
             </div>
             `

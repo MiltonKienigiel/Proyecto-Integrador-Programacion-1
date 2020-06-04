@@ -366,6 +366,18 @@ body{
     border-color:rgb(56, 54, 54);
     border-width: thin;
 }
+.songArtista{
+    display: flex;
+    align-items: center;
+    text-decoration-line:none ;
+    color: white;
+    text-align: center;
+    padding-left: 5px;
+}
+.audios{
+    width:100%;
+
+}
 
 /*----------------------------------Footer------------------------*/
 .footer ul li{
@@ -585,6 +597,21 @@ body{
 }
 .d-none{
     display: block;
+}
+.audios{
+    padding-left: 10px;
+}
+.songArtista{
+    display: flex;
+    align-items: center;
+    text-decoration-line:none ;
+    color: white;
+    text-align: center;
+    padding-left: 50px;
+}
+.songArtista:hover{
+    text-decoration-line:underline;
+    color: greenyellow;
 }
 /*---------------------------------------------------------------------*/
     /*---------------------------------Footer--------------------------*/

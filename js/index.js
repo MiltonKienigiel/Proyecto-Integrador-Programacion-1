@@ -2,7 +2,9 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0")
 .then(function(response){
     return response.json()
 }).then(function(data){
-
+    console.log(data);
+    
+    
         let artistas = data.artists.data
         let contenedorArtistas = document.querySelector(".seccion-artista");
         
@@ -100,7 +102,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0")
                 if(info.length > 100){
                     console.log(info);
 
-                    let infoParte = info.slice(0,100);
+                    let infoParte = info.slice(0,90);
                     info = infoParte + '...'
                     
                 }
@@ -109,10 +111,10 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0")
             `
             <div>
                 <div class="container3">
-                    <a href="detalles-album.html?id=${podcast.id}">
+                    <a href="detalles-podcast.html?id=${podcast.id}">
                         <img class="imagen-colores" src="${podcast.picture_big}" alt="">
                     </a>
-                    <a class="textos" href="detalles-album.html?id=${podcast.id}">${podcast.title}</a>
+                    <a class="textos" href="detalles-podcast.html?id=${podcast.id}">${podcast.title}</a>
                     <div class="textos2">${info} - ${podcast.fans} fans</div>
                 </div>
             </div>

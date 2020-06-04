@@ -55,9 +55,9 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/"+artis
             
             
             <div class="song">
-                <p>${cancion.title_short}</p>
-                <p class="d-none">${cancion.artist.name}</p>
-                <p>${cancion.album.title}</p> 
+                <p><audio class="audios" src="${cancion.preview}" controls></audio></p>
+                <p><a href="detalles-tracks.html?id=${cancion.id}" class="songArtista" >${cancion.title_short}</a> </p>
+                <p class="d-none"><a href="detalles-album.html?id=${cancion.album.id}" class="songArtista" >${cancion.album.title}</a></p> 
                 <p>${cancion.rank}</p>
             </div>
             

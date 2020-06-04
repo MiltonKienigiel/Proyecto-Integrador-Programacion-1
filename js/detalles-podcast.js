@@ -44,16 +44,14 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/"+albumI
     let cancionesAlbum = album.tracks.data
     let contenedorPlaylist = document.querySelector(".playlist");
     
-    console.log(cancionesAlbum);
-    
     for (const cancion of cancionesAlbum) {
         contenedorPlaylist.innerHTML +=`
         
         
         <div class="song">
-            <p><audio class="audios" src="${cancion.preview}" controls></audio></p>
-            <p><a href="detalles-tracks.html?id=${cancion.id}" class="songArtista" >${cancion.title_short}</a> </p>
-            <p class="d-none"><a href="detalles-album.html?id=${album.id}" class="songArtista" >${album.title}</a></p> 
+            <p>${cancion.title_short}</p>
+            <p class="d-none">${cancion.artist.name}</p>
+            <p>${album.title}</p> 
             <p>${cancion.rank}</p>
         </div>
         

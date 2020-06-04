@@ -283,6 +283,18 @@ body{
     border-width: thin;
 
 }
+.audios{
+    width:100%;
+
+}
+.songArtista{
+    display: flex;
+    align-items: center;
+    text-decoration-line:none ;
+    color: white;
+    text-align: center;
+    padding-left: 5px;
+}
 .song:hover{
     background-color: gray;
     color: #aeea00;
@@ -504,6 +516,26 @@ body{
     .playlist{
         margin-right: 90px;
         margin-left: 90px;
+        
+    }
+    .playlist a{
+        color: white;
+    }
+    .audios{
+        padding-left: 10px;
+    }
+        
+    .songArtista{
+        display: flex;
+        align-items: center;
+        text-decoration-line:none ;
+        color: white;
+        text-align: center;
+        padding-left: 50px;
+    }
+    .songArtista:hover{
+        text-decoration-line:underline;
+        color: greenyellow;
     }
     .acciones{
         display: flex;

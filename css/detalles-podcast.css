@@ -1,3 +1,4 @@
+
 /*----------------------  Mobile First------------------*/
 
 .header{
@@ -52,11 +53,13 @@ a{
 }
 
 /*---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
 /*-------------------------Body----------------------------*/
 body{
     background-color: #000a12;
 }
 /*---------------------------------------------------------------------*/
+
 /*----------------------  Botones Header ------------------*/
 .boton-generos{
     border: white 4px inset;
@@ -222,45 +225,97 @@ body{
         display: inline-flex;
     }
     /*---------------------------------------------------------------------*/
-
-/*------------------------Detalle Cancion Celu----------------------*/
-
-.fila1{
-    display:flex ;
-    flex-direction: column;   
+/*----------------------------------Album celu-----------------------*/
+.album-data{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    background-color: black;
     color: white;
     border-radius: 15px;
-    margin-bottom: 10px;
     
 }
-.columna1 img{
-    border-radius: 15px;
+
+.imagen-album img{
     width: 100%;
-    margin-top:20px ;
+    padding: 8px;
+    border-radius: 15px;
 }
-.columna2{
+.imagen-album{
+    display: flex;
+    justify-content: center;
+}
+.texto-album{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+.texto-album a{
+    color: white;
+
+}
+.texto-album a:hover{
+    text-decoration-line:underline ;
+}
+
+/*----------------------------------Playlist------------------------*/
+
+.playlist {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    background-color: black;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    padding: 10px;
+
+} 
+.song {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    text-align: center;
+    border-top: solid; 
+    border-color: rgb(56, 54, 54);
+    border-width: thin;
+
+}
+.song:hover{
+    background-color: gray;
+    color: #aeea00;
+
+}
+.song-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    justify-content: space-around;
+    border-top: solid; 
+    border-color:rgb(56, 54, 54);
+    border-width: thin;
+}
+.texto-secciones{
+    color: white;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    display: flex;
-    flex-direction: column;
-}
-.texto-gris{
-    color: rgb(179, 167, 167);
-    font-size: small;
+    font-size: x-large;
     
 }
-.texto-a{
- color: gray;  
 
-}
-.texto-a:hover{
-    text-decoration-line:underline ;
-    color: white;
-
+.textos2{
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+    display: flex;
+    align-self: flex-start;
+    font-size: small;
 }
 .acciones{
     margin-left: -40px;
     text-align: center;
+
 }
 .mix{
     padding: 10px;
@@ -269,118 +324,17 @@ body{
     
 }
 .añadir{
-
+    text-align: center;
     background-color: crimson;
     color: white;
     border-radius: 5px;
     padding: 10px;
     list-style-type: none ;
-}
-
-.fila2{
-    font-family: 'Raleway', sans-serif;
-    
-    color: white;
-    border-radius: 15px;
-    
-    text-align: center;
-}
-
-.fila3{
-    
-    color: white;
-    border-radius: 15px;
-    padding: 5px;
-    text-align: center;
-
-}
-.contenedor-imagen img{
-    width: 100%;
-}
-.contendor-imagen a{
-    border-radius: 15px;
-    background-color: white;
-    color:black;
-    width: 100%;
     
 }
-.texto-album{
-    font-family: 'Raleway', sans-serif;
-    color: rgb(180, 180, 180);
-   
+.añadir:hover{
+    opacity: 60%;
 }
-.texto-album:hover{
-    text-decoration-line:underline ;
-}
-.texto-canciones{
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    color: white;
-}
-.imagen-d-none{
-    display: none;
-}
-.links{
-    display: flex;
-    flex-direction: column;
-}
-/*---------------------------------------------------------------------*/
-/*----------------------------------Playlist Celu------------------------*/
-
-.playlist {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: #2c2c2c;
-    border-radius: 15px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-    padding: 10px;
-} 
-.song {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-around;
-    text-align: center;
-    border-style: solid; 
-    border-color: rgb(56, 54, 54);
-    border-width: thin;
-
-}
-.audios{
-    width:100%;
-
-}
-.d-none{
-    display: none;
-}
-.song:hover{
-    background-color: rgba(128, 128, 128, 0.664);
-    color: greenyellow;
-
-}
-.song-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
-    justify-content: space-around;
-    border-style: solid; 
-    border-color:rgb(56, 54, 54);
-    border-width: thin;
-}
-
-.songArtista{
-    display: flex;
-    align-items: center;
-    text-decoration-line:none ;
-    color: white;
-    text-align: center;
-    padding-left: 5px;
-    text-transform: uppercase;
-}
-
 /*----------------------------------Footer------------------------*/
 .footer ul li{
     display:inline-flex ;
@@ -406,7 +360,6 @@ body{
 }
 
 /*---------------------------------------------------------------------*/
-
 /*----------------------------------Computadora------------------------*/
 
 @media(min-width:768px){
@@ -433,14 +386,19 @@ body{
         margin-top: none;
     }
     
-    
-    
     .texto-inicio{
         display:inline-flex;
         justify-content: flex-end;
     }
+    .texto-secciones{
+
+        color: white;
+        text-align: left;
+        font-size: x-large;
+        
+    }
     /*---------------------------------------------------------------------*/
-/*-----------------Header-toggle---------------------------------*/
+    /*-----------------Header-toggle---------------------------------*/
 .toggle-menu{
     display: none;
 }
@@ -531,97 +489,37 @@ body{
         display: inline-flex;
     }
     /*---------------------------------------------------------------------*/
-    /*------------------------Contenedor Total--------------------------------*/
-.contenedor{
-    margin-right: 90px;
-    margin-left: 90px;
-}
-/*---------------------------------------------------------------------*/
-/*------------------------Detalle Cancion Compu----------------------*/
+    /*----------------------------------Album------------------------*/
+    .album-data{
+        display: grid;
+        grid-template-columns: 15% 85%;
+        text-align: left;
+        margin-right: 90px;
+        margin-left: 90px;
+        margin-top: 30px;
+    }
+    .texto-album{
+    padding: 20px;
+    }
+    .playlist{
+        margin-right: 90px;
+        margin-left: 90px;
+    }
+    .acciones{
+        display: flex;
 
-.fila1{
-    display: flex;
-    flex-direction: row;
-}
-.columna1 img{
-    width:20em;
-}
-.columna2{
-    padding-left:20px;
-    text-align: left;
-}
-.columna2 h2{
-    font-size: 50px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-.acciones{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    margin-left: -40px;
-}
-.añadir:hover{
-    opacity: 60%;
-}
-.fila2{
-    text-align: center;
-}
-.fila3{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    text-align: center;
-}
-.contenedor-imagen{
-    background-color: white;
-    border-radius: 15px;
-    margin: 15px;
-    color: black;
-}
-.contenedor-imagen img{
-    width: 100%;
-}
-.imagen-d-none{
-    display: block;
-}
-.contenedor-imagen img:hover{
-    opacity: 50%;
-}
-/*---------------------------------------------------------------------*/
-/*----------------------------Playlist COmpu---------------------------*/
-.song{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.song-info{
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr ;
-}
-.d-none{
-    display: block;
-    padding-left: 50px;
-    
-}
-.audios{
-    padding-left: 10px;
-}
-.songArtista{
-    display: flex;
-    align-items: center;
-    text-decoration-line:none ;
-    color: white;
-    text-align: center;
-    padding-left: 50px;
-}
-.songArtista:hover{
-    text-decoration-line:underline;
-    color: greenyellow;
-}
-/*---------------------------------------------------------------------*/
+    }
+    .mix{
+        text-align: left;
+    }
+    .añadir{
+        text-align: left;
+        width: fit-content;
+    }
     /*---------------------------------Footer--------------------------*/
 #logo-deezer{
     width:10%;
     height:20%;
-}
+    }
 /*---------------------------------------------------------------------*/
 }

@@ -47,10 +47,10 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/playlist/" + p
         contenedorPlaylist.innerHTML +=`
         
         <div class="song"> 
-                <p>${track.title_short}</p>
-                <p class="d-none">${track.artist.name}</p>
-                <p>${track.album.title}</p> 
-                <p>${track.rank}</p>
+                <p> <audio class="audios" src="${track.preview}" controls ></audio></p>
+                <p><a href="detalles-tracks.html?id=${track.id}" class="songArtista" >${track.title_short}</a></p>
+                <p class="d-none">${track.album.title}</p> 
+                <p><a href="details.html?id=${track.id}" class="songArtista" >${track.artist.name}</a></p>
             </div>
         
         

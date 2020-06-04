@@ -34,6 +34,7 @@ console.log(track);
             <div class="links">
                 <a href="details.html?id=${track.artist.id}" class="texto-album">${track.artist.name}</a>
                 <a href="detalles-album.html?id=${track.album.id}" class="texto-a">Album : ${track.album.title}</a>
+                <h3 class="texto-gris">${track.duration} Seg</h3>
             </div>
             <ul class="acciones">
                 <li class="añadir">Añadir</li>
@@ -45,8 +46,8 @@ console.log(track);
 let contenedorPlaylist = document.querySelector(".playlist")
 contenedorPlaylist.innerHTML += `
     <div class="song"> 
-        <p>${track.title_short}</p>
-        <p class="d-none">${track.artist.name}</p>
+        <p><audio class="audios" src="${track.preview}" controls></audio></p>
+        <p class="d-none">${track.title_short}</p>
         <p>${track.album.title}</p> 
         <p>${track.rank}</p>
     </div>

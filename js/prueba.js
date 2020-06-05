@@ -19,9 +19,9 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0")
                         <img class="imagen-drake" src="${artista.picture_big}" alt="">
                     </a>
 
-                    <a class="textos" href="details.html?id=${artista.id}">${artista.name}</a>
+                    <a class="textos4" href="details.html?id=${artista.id}">${artista.name}</a>
 
-                    <div class="textos2">Artista</div>
+                    <div class="textos5">Artista</div>
             </div>
         </div>
         `

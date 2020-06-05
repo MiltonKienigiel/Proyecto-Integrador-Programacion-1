@@ -398,93 +398,99 @@ body{
     .toggle-menu{
         display: none;
     }
+    #logo{
+        display: none;
+    }
+    .texto-mashup{
+        display: none;
+    }
     /*---------------------------------------------------------------------*/
     /*-------------------------Nuevo Header-------------------------*/
-.titulo-none{
-    display: none;
-}
-.contenedor-header{
-    background-color:#263238;
-    width: 100%;
-    padding: 10px;
-   
-    border-radius: 15px;
-    box-sizing: border-box;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.logo{
-    width: 40px;
-    height: 40px;
-}
-
-.boton-principal2{
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-size: x-large;
-    padding: 10px;
-    text-decoration-line:none;
-}
-.boton-principal2:hover{
-    text-decoration-line:none;
-    color: white;
-}
-.boton-explorar2{
-    color: grey;
-    font-family: 'Raleway', sans-serif;
-    font-size: x-large;
-    padding: 10px;
-    text-decoration-line:none ;
-}
-.boton-explorar2:hover{
-    color: white;
-}
-.boton-playlist2{
-    font-family: 'Raleway', sans-serif;
-    font-size: x-large;
-    color: grey;
-    padding: 10px;
-    text-decoration-line:none ;
-}
-.boton-playlist2:hover{
-    color: white;
-}
-.boton-about2{
-    color: grey;
-    font-family: 'Raleway', sans-serif;
-    font-size: x-large;
-    padding: 10px;
-    text-decoration-line:none ;
-}
-.boton-about2:hover{
-    color: white;
-}
-
-.centrar-objetos{
-    display: flex;   
-    flex-direction:row ;    
-
-    
-}
-
-/*-------------------------------HEADER INTENTO-----------------------*/
-    
-    
-.titulo-header{
-    font-family: 'Raleway', sans-serif;
-    font-size: xx-large;
-    color: white;
+    .titulo-none{
+        display: none;
     }
-   
-    .logo-titulo{
-        display: inline-flex;
+    .contenedor-header{
+        background-color:#263238;
+        width: 100%;
+        padding: 10px;
+       
+        border-radius: 15px;
+        box-sizing: border-box;
+    
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
-    /*---------------------------------------------------------------------*/
+    
+    
+    .logo{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .boton-principal2{
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-size: x-large;
+        padding: 10px;
+        text-decoration-line:none;
+    }
+    .boton-principal2:hover{
+        text-decoration-line:none;
+        color: white;
+    }
+    .boton-explorar2{
+        color: grey;
+        font-family: 'Raleway', sans-serif;
+        font-size: x-large;
+        padding: 10px;
+        text-decoration-line:none ;
+    }
+    .boton-explorar2:hover{
+        color: white;
+    }
+    .boton-playlist2{
+        font-family: 'Raleway', sans-serif;
+        font-size: x-large;
+        color: grey;
+        padding: 10px;
+        text-decoration-line:none ;
+    }
+    .boton-playlist2:hover{
+        color: white;
+    }
+    .boton-about2{
+        color: grey;
+        font-family: 'Raleway', sans-serif;
+        font-size: x-large;
+        padding: 10px;
+        text-decoration-line:none ;
+    }
+    .boton-about2:hover{
+        color: white;
+    }
+    
+    .centrar-objetos{
+        display: flex;   
+        flex-direction:row ;    
+    
+        
+    }
+    
+    /*-------------------------------HEADER INTENTO-----------------------*/
+        
+        
+    .titulo-header{
+        font-family: 'Raleway', sans-serif;
+        font-size: xx-large;
+        color: white;
+        }
+       
+        .logo-titulo{
+            display: inline-flex;
+        }
+        /*---------------------------------------------------------------------*/
     /*----------------------TITULO GENEROS-----------------------------*/
 .titulo-generos{
     font-family: 'Raleway', sans-serif;

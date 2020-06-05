@@ -235,7 +235,7 @@ body{
     
 }
 .columna1 img{
-    border-radius: 15px;
+    border-radius: 50%;
     width: 100%;
     margin-top:20px ;
 }
@@ -351,7 +351,7 @@ body{
 }
 
 .audios{
-    width:100%;
+    width:107%;
 
 }
 .songArtista{
@@ -371,6 +371,7 @@ body{
     color: white;
     flex-direction: row;
     justify-content:flex-end;
+    font-family: 'Raleway', sans-serif;
 }
 #logo-deezer{
     width: 20%;
@@ -533,6 +534,7 @@ body{
 }
 .columna1 img{
     width:20em;
+    border-radius: 50%;
 }
 .columna2{
     padding-left:20px;
@@ -574,6 +576,9 @@ body{
 }
 .contenedor-imagen img:hover{
     opacity: 50%;
+}
+.imagen-cancion{
+    border-radius: 50%;
 }
 /*---------------------------------------------------------------------*/
 /*----------------------------Playlist COmpu---------------------------*/

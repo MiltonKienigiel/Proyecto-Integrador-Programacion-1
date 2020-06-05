@@ -277,6 +277,22 @@ body{
     padding-left:10px;
     font-size: smaller;
 }
+.textos4{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.textos5{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(168, 161, 161);
+    display: flex;
+    align-self: flex-start;
+    padding-left:10px;
+    font-size: smaller;
+}
 .arrows{
     display: none;
 }
@@ -617,8 +633,32 @@ body{
     margin-top: 50px;
     margin-bottom: 40px;
 
+
 }
 
+.container1 img{
+    border-radius: 25px;
+}
+
+.container3 img{
+    border-radius: 25px;
+}
+.textos4{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.textos5{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(168, 161, 161);
+    display: flex;
+    align-self: flex-start;
+    padding-left:10px;
+    font-size: smaller;
+}
 /*---------------------------------------------------------------------*/
 
 /*---------------------------------Footer--------------------------*/
@@ -626,6 +666,150 @@ body{
     width:10%;
     height:20%;
 }
+
+/*Intento*/
+
+
+
+.container1 {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    perspective: 1000px;
+  }
+  .imagen-perreo-sola {
+    padding:20px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    overflow: hidden;
+    background-image: linear-gradient(120deg,  0%, 100%);
+    background-size: cover;
+    perspective-origin: 50% 50%;
+    transform-style: preserve-3d;
+    transform-origin: top center;
+    will-change: transform;
+    transform: skewX(0.001deg);
+    transition: transform 0.35s ease-in-out;
+  }
+  .container1:after {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 100;
+    top: 100;
+    left: 0;
+    width: 100%;
+    border-radius: 15px;
+    
+    background: linear-gradient(
+      226deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0.4) 35%,
+      rgba(255, 255, 255, 0.2) 42%,
+      rgba(255, 255, 255, 0) 60%
+    );
+    transform: translatey(-20%);
+    will-change: transform;
+    transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+  }
+  .container1:hover .imagen-perreo-sola {
+    transform: rotateX(7deg) translatey(-6px);
+  }
+  .container1:hover .imagen-perreo-sola:after {
+    transform: translatey(0%);
+  }
+  .container1:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 6px 12px 12px rgba(0, 0, 0, 0.4);
+    will-change: skewx(0.001deg);
+    transition: transform 0.35s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  .container1:hover:before {
+    opacity: 0.6;
+    transform: rotatex(7deg) translatey(-6px) scale(1.05);
+  }
+ 
+.textos{
+    padding-top: 100%;
+    position: relative;
+}
+
+.container3 {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    perspective: 1000px;
+  }
+  .imagen-colores {
+    padding:20px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(120deg,  0%, 100%);
+    background-size: cover;
+    perspective-origin: 50% 50%;
+    transform-style: preserve-3d;
+    transform-origin: top center;
+    will-change: transform;
+    transform: skewX(0.001deg);
+    transition: transform 0.35s ease-in-out;
+  }
+  .container3:after {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 100;
+    top: 100;
+    left: 0;
+    width: 100%;
+    border-radius: 15px;
+    background: linear-gradient(
+      226deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0.4) 35%,
+      rgba(255, 255, 255, 0.2) 42%,
+      rgba(255, 255, 255, 0) 60%
+    );
+    transform: translatey(-20%);
+    will-change: transform;
+    transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+  }
+  .container3:hover .imagen-colores {
+    transform: rotateX(7deg) translatey(-6px);
+  }
+  .container3:hover .imagen-colores:after {
+    transform: translatey(0%);
+  }
+  .container3:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 6px 12px 12px rgba(0, 0, 0, 0.4);
+    will-change: skewx(0.001deg);
+    transition: transform 0.35s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  .container3:hover:before {
+    opacity: 0.6;
+    transform: rotatex(7deg) translatey(-6px) scale(1.05);
+  }
 
 /*---------------------------------------------------------------------*/
 }

@@ -63,7 +63,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0")
                         <img class="imagen-perreo-sola" src="${track.album.cover_big}" alt="">
                     </a>
                     <a class="textos" href="detalles-tracks.html?id=${track.id}">${track.title_short}</a> 
-                    <div class="textos2">de ${track.artist.name}</div>
+                    <a href="details.html?id=${track.artist.id}" class="textos2">${track.artist.name}</a>
                     <div class="textos3">Ranking: ${track.rank}</div>
                 </div>
             </div>

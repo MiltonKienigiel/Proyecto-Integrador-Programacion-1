@@ -1,0 +1,708 @@
+
+/*----------------------  Mobile First------------------*/
+
+.header{
+    background-color:#263238;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+a{
+    text-decoration-line:none ;
+    color: black;
+}
+.texto-mashup{
+    font-family: 'Rancho', cursive;
+    display: inline;
+    font-size: xx-large;
+}
+.texto-mashup a{
+    color: white;
+    text-decoration-line:none ;
+}
+
+
+#logo{
+    width: 50px;
+    margin-left: 5px;
+}
+.main-nav2{
+    text-align: center;
+}
+.main-nav ul li {
+
+    list-style-type: none;
+    padding:10px;
+    color: black;
+    
+}
+.main-nav ul{
+    display:flex;
+
+}
+.main-nav{
+    display:none;
+}
+.texto-inicio{
+    background-color: white;
+}
+.fa-bars{
+    color: white;
+}
+/*---------------------------------------------------------------------*/
+/*-------------------------Body----------------------------*/
+body{
+    background-color: #000a12;
+}
+/*---------------------------------------------------------------------*/
+/*----------------------  Botones Header ------------------*/
+.boton-generos{
+    border: white 4px inset;
+    border-radius: 5px 5px 10px 10px;
+    background-color: white;
+}
+.boton-playlist{
+    border: white 4px inset;
+    border-radius: 5px 5px 10px 10px;
+    background-color: white;
+}
+.boton-home{
+    border: white 4px inset;
+    border-radius: 5px 5px 10px 10px;
+    background-color: white;
+}
+.boton-about{
+    border: white 4px inset;
+    border-radius: 5px 5px 10px 10px;
+    background-color: white;
+}
+
+.texto-inicio{
+    border: white 4px inset;
+    border-radius: 5px 5px 10px 10px;
+    
+}
+.boton-about:hover{
+    background-color: grey;
+}
+.boton-home:hover{
+    background-color: darkcyan;  
+}
+.boton-playlist:hover{
+    background-color: darkmagenta;
+}
+.boton-generos:hover{
+    background-color: yellow;
+}
+.boton-home:hover a{
+    color: white;
+    text-decoration-line:none ;
+}
+.boton-playlist:hover a{
+    color: white;
+    text-decoration-line:none ;
+}
+.boton-generos:hover a{
+    color: black;
+    text-decoration-line:none ;
+}
+.boton-about:hover a{
+    color: white;
+    text-decoration-line:none ;
+}
+/*---------------------------------------------------------------------*/
+/*-------------------------Nuevo Header-------------------------*/
+#logo{
+    display: none;
+}
+
+.main-nav2{
+    display: none;
+}
+
+.logo{
+    width: 20px;
+}
+.centrar-objetos{
+    display: flex;
+    flex-direction: column;
+}
+.texto-mashup{
+    display: none;
+}
+/*-------------------------Nuevo Header Celu-------------------------*/
+.logo-titulo{
+    text-decoration-line:underline ;
+}
+.contenedor-header{
+    background-color:#263238;
+    width: 100%;
+    padding: 10px;
+   
+    border-radius: 15px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-titulo{
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+}
+
+.boton-principal2{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    padding: 10px;
+    text-decoration-line:none;
+}
+.boton-principal2:hover{
+    text-decoration-line:none;
+    color: white;
+}
+.boton-explorar2{
+    color: grey;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    padding: 10px;
+    text-decoration-line:none ;
+}
+.boton-explorar2:hover{
+    color: white;
+}
+.boton-playlist2{
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    color: grey;
+    padding: 10px;
+    text-decoration-line:none ;
+}
+.boton-playlist2:hover{
+    color: white;
+}
+.boton-about2{
+    color: grey;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    padding: 10px;
+    text-decoration-line:none ;
+}
+.boton-about2:hover{
+    color: white;
+}
+
+.centrar-objetos{
+    display: flex;   
+    
+
+    
+}
+
+/*-------------------------------HEADER INTENTO-----------------------*/
+    
+    
+.titulo-header{
+    font-family: 'Raleway', sans-serif;
+    font-size: xx-large;
+    color: white;
+    }
+   
+    .logo-titulo{
+        display: inline-flex;
+    }
+    /*---------------------------------------------------------------------*/
+/*----------------------------------Secciones Celu------------------------*/
+.seccion-artista{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.seccion-album{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.seccion-canciones{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.seccion-playlist{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.seccion-podcast{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.texto-secciones{
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    
+}
+.textos{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.textos2{
+    font-family: 'Raleway', sans-serif;
+    color: grey;
+    display: flex;
+    align-self: flex-start;
+    padding-left:10px;
+    font-size: small;
+}
+.textos3{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(168, 161, 161);
+    display: flex;
+    align-self: flex-start;
+    padding-left:10px;
+    font-size: smaller;
+}
+.arrows{
+    display: none;
+}
+
+/*---------------------------------------------------------------------*/
+/*----------------------------------Carousel------------------------*/
+.texto-carousel{
+    position: absolute;
+    top:8% ;
+}
+/*---------------------------------------------------------------------*/
+
+/*----------------------------------Top Canciones Celu------------------------*/
+.container-tracks{
+    
+    margin: 20px;
+    border-radius: 15px;
+}
+.container1{
+  /*  background-color: teal; */
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;   
+}
+.container1 a{
+    color: white;
+}
+
+.container1 img{
+    border-radius: 5px;
+}
+.container1 img:hover{
+    opacity: 50%;
+}
+.imagen-perreo-sola{
+    width:100%;
+}
+.imagen-travesuras{
+    width: 100%;
+}
+/*---------------------------------------------------------------------*/
+
+/*----------------------------------Top Artistas Celu------------------------*/
+.container-artistas{
+    
+    margin: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.container2{
+   /* background-color: turquoise; */
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+.container2 a{
+    color: white;
+}
+.container2 img{
+    border-radius: 50%;
+}
+.container2 img:hover{
+    opacity: 50%;
+}
+.imagen-drake{
+    width: 100%;
+}
+/*---------------------------------------------------------------------*/
+
+/*----------------------------------Top Album Celu------------------------*/
+.container-album{
+  
+    margin: 20px;
+    border-radius: 15px;
+}
+.container3{
+   /* background-color: white; */
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+.container3 a{
+    color: white;
+}
+.container3 img{
+    border-radius: 5px;
+}
+.container3 img:hover{
+    opacity: 50%;
+}
+.imagen-colores{
+    width: 100%;
+}
+/*---------------------------------------------------------------------*/
+
+
+
+
+/*----------------------------------Footer------------------------*/
+.footer ul li{
+    display:inline-flex ;
+    list-style-type: none;
+    padding:6px;
+    color: white;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+#logo-deezer{
+    width: 20%;
+    height: 60%;
+    display: inline-block;
+    margin-left: 10px;
+}
+.footer{
+    display:flex;
+    flex-direction: row;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/*---------------------------------------------------------------------*/
+
+
+
+
+/*----------------------------------Computadora------------------------*/
+
+@media(min-width:768px){
+
+.header{
+    display: flex;
+    flex-direction: row;
+}
+.main-nav ul li{
+    display:inline-flex ;
+    list-style-type: none;
+    padding:6px;
+    color: black;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+.main-nav{
+    display: block;
+}
+.main-nav2{
+    display: none;
+}
+.ul-margin{
+    margin-top: none;
+}
+
+
+.texto-inicio{
+    display:inline-flex;
+    justify-content: flex-end;
+}
+
+/*---------------------------------------------------------------------*/
+/*-----------------Header-toggle---------------------------------*/
+.toggle-menu{
+    display: none;
+}
+#logo{
+    display: none;
+}
+.texto-mashup{
+    display: none;
+}
+/*---------------------------------------------------------------------*/
+/*-------------------------Nuevo Header-------------------------*/
+.titulo-none{
+    display: none;
+}
+.contenedor-header{
+    background-color:#263238;
+    width: 100%;
+    padding: 10px;
+   
+    border-radius: 15px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo{
+    width: 40px;
+    height: 40px;
+}
+
+.boton-principal2{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    padding: 10px;
+    text-decoration-line:none;
+}
+.boton-principal2:hover{
+    text-decoration-line:none;
+    color: white;
+}
+.boton-explorar2{
+    color: grey;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    padding: 10px;
+    text-decoration-line:none ;
+}
+.boton-explorar2:hover{
+    color: white;
+}
+.boton-playlist2{
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    color: grey;
+    padding: 10px;
+    text-decoration-line:none ;
+}
+.boton-playlist2:hover{
+    color: white;
+}
+.boton-about2{
+    color: grey;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;
+    padding: 10px;
+    text-decoration-line:none ;
+}
+.boton-about2:hover{
+    color: white;
+}
+
+.centrar-objetos{
+    display: flex;   
+    flex-direction:row ;    
+
+    
+}
+
+/*-------------------------------HEADER INTENTO-----------------------*/
+    
+    
+.titulo-header{
+    font-family: 'Raleway', sans-serif;
+    font-size: xx-large;
+    color: white;
+    }
+   
+    .logo-titulo{
+        display: inline-flex;
+    }
+    /*---------------------------------------------------------------------*/
+/*---------------------------Carrusel---------------------------------*/
+.texto-carousel h5{
+    font-size: xx-large;
+}
+.texto-carousel p{
+    font-size: x-large;
+}
+/*---------------------------------------------------------------------*/
+/*----------------------------------Seccion Compu------------------------*/
+
+.texto-secciones{
+
+    color: white;
+    text-align: left;
+    font-size: x-large;
+    
+}
+.seccion-artista{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    margin-left:70px ;
+    margin-right:70px;
+}
+.seccion-album{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    margin-left:70px ;
+    margin-right:70px;
+}
+.seccion-canciones{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    margin-left:70px ;
+    margin-right:70px;
+}
+.seccion-playlist{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    margin-left:70px ;
+    margin-right:70px;
+}
+.seccion-podcast{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    margin-left:70px ;
+    margin-right:70px;
+}
+.titulo-seccion{
+    display: flex;
+    margin-left:90px ;
+    margin-right: 90px;
+    justify-content: space-between;
+
+}
+.arrows{
+    display: block;
+    border-radius: 5px;
+    height: max-content;
+}
+.fas{
+    color: white;
+}
+/*---------------------------------------------------------------------*/
+
+/*------------------------------Containers PC---------------------------*/
+.container-artistas{
+    margin-top: 50px;
+}
+
+.container-album{
+    margin-top: 50px;
+}
+.container-tracks{
+    margin-top: 50px;
+    margin-bottom: 40px;
+
+}
+
+/*---------------------------------------------------------------------*/
+
+/*---------------------------------Footer--------------------------*/
+#logo-deezer{
+    width:10%;
+    height:20%;
+}
+
+/*---------------------------------------------------------------------*/
+/*Intento*/
+
+
+
+.container1 {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding-bottom: 80%;
+    perspective: 1000px;
+  }
+  .imagen-perreo-sola {
+    padding:20px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    overflow: hidden;
+    background-image: linear-gradient(120deg,  0%, 100%);
+    background-size: cover;
+    perspective-origin: 50% 50%;
+    transform-style: preserve-3d;
+    transform-origin: top center;
+    will-change: transform;
+    transform: skewX(0.001deg);
+    transition: transform 0.35s ease-in-out;
+  }
+  .imagen-perreo-sola:after {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 100;
+    top: 100;
+    left: 0;
+    width: 100%;
+    border-radius: 15px;
+    
+    background: linear-gradient(
+      226deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0.4) 35%,
+      rgba(255, 255, 255, 0.2) 42%,
+      rgba(255, 255, 255, 0) 60%
+    );
+    transform: translatey(-20%);
+    will-change: transform;
+    transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+  }
+  .container1:hover .imagen-perreo-sola {
+    transform: rotateX(7deg) translatey(-6px);
+  }
+  .container1:hover .imagen-perreo-sola:after {
+    transform: translatey(0%);
+  }
+  .container1:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 6px 12px 12px rgba(0, 0, 0, 0.4);
+    will-change: skewx(0.001deg);
+    transition: transform 0.35s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  .container1:hover:before {
+    opacity: 0.6;
+    transform: rotatex(7deg) translatey(-6px) scale(1.05);
+  }
+  .textos .textos2 .textos3{
+      padding-top: 200px;
+      position: absolute;
+  }
+
+}

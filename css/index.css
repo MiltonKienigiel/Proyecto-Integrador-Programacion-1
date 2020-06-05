@@ -383,6 +383,7 @@ body{
     color: white;
     flex-direction: row;
     justify-content:flex-end;
+    font-family: 'Raleway', sans-serif;
 }
 #logo-deezer{
     width: 20%;

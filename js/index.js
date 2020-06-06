@@ -10,8 +10,6 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0")
         
         for (const artista of artistas){
             
-            
-        
         contenedorArtistas.innerHTML += `
         <div> 
             <div class="container2">

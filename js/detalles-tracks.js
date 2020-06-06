@@ -23,6 +23,11 @@ let contenedorData = document.querySelector(".fila1")
 let track = data
 console.log(track);
 
+/***************************************************************************/
+let playlist =[track];
+
+/***************************************************************************/
+
     contenedorData.innerHTML =
         `
         <div class="columna1">
@@ -52,6 +57,16 @@ contenedorPlaylist.innerHTML += `
         <p>${track.rank}</p>
     </div>
 `
+/*************************************************************************** */ 
+
+let añadir =document.querySelector(".añadir");
+añadir.addEventListener("click", function() {
+    if (window.localStorage.getItem("playlist") === null) {
+        window.localStorage.setItem("playlist", JSON.stringify(playlist))
+    }
+})
+
+/***************************************************************************/
 
 let artistId = track.artist.id
 
@@ -80,3 +95,11 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/"+artis
         console.error(error)
     })
 })
+
+/***************************************************************************/
+function s() {
+    if (window.localStorage.getItem("playlist") === null) {
+        window.localStorage.setItem("playlist", JSON.stringify(playlist))
+    }
+}
+/***************************************************************************/

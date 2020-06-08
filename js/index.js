@@ -31,20 +31,20 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0")
             
         contenedorAlbumes.innerHTML += 
         `
-        <div>    
-            <div class="container1">
-                    <a href="detalles-album.html?id=${album.id}">
-                        <img class="imagen-perreo-sola" src="${album.cover_big}" alt="">
-                    </a>
-                    
-                    <a class="textos" href="detalles-tracks.html?id=${album.id}">${album.title}</a>
-                    <a href="details.html?id=${album.artist.id}" class="textos2">
-                    ${album.artist.name}
-                    </a>
-                    
-                    <div class="textos3"> ${album.record_type}</div>
+            <div>    
+                <div class="container1">
+                        <a href="detalles-album.html?id=${album.id}">
+                            <img class="imagen-perreo-sola" src="${album.cover_big}" alt="">
+                        </a>
+                        
+                        <a class="textos" href="detalles-tracks.html?id=${album.id}">${album.title}</a>
+                        <a href="details.html?id=${album.artist.id}" class="textos2">
+                        ${album.artist.name}
+                        </a>
+                        
+                        <div class="textos3"> ${album.record_type}</div>
+                </div>
             </div>
-        </div>
         `
             
     }

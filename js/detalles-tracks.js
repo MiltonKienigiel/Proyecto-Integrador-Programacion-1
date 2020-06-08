@@ -60,9 +60,22 @@ contenedorPlaylist.innerHTML += `
 /*************************************************************************** */ 
 
 let añadir =document.querySelector(".añadir");
-añadir.addEventListener("click", function() {
-    if (window.localStorage.getItem("playlist") === null) {
+
+
+añadir.addEventListener("click", function(){
+    if (window.localStorage.getItem("playlist") === null){
+
         window.localStorage.setItem("playlist", JSON.stringify(playlist))
+        
+    }else{
+        let cancionObjeto = JSON.parse(window.localStorage.getItem("playlist"))
+        
+        cancionObjeto.push(track)
+
+        window.localStorage.setItem("playlist", JSON.stringify(cancionObjeto))
+        
+        console.log(cancionObjeto);
+        
     }
 })
 

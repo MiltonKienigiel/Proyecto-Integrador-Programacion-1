@@ -1,18 +1,27 @@
-window.onload =function(){
+window.onload = function(){
 
-let tracks =JSON.parse(window.localStorage.getItem("playlist"));
+let tracksArray = window.localStorage.getItem("playlist")
+
+let tracks =JSON.parse(tracksArray);
 
 console.log(tracks);
 
 let contenedorPlaylist = document.querySelector(".playlist");
 
+let cartel = document.querySelector(".cartelNoSongs");
+
 if(tracks === null){
 
+cartel.style.display = "flex";
+cartel.style.justifyContent = "center";
 }else{
+cartel.style.display = "none";
+
+
 
     tracks.forEach(track => {
     
-        contenedorPlaylist.innerHTML +=`
+    contenedorPlaylist.innerHTML +=`
         
         
     <div class="song"> 
@@ -25,4 +34,12 @@ if(tracks === null){
         `
     });
 }
+
+let clear = document.querySelector(".clear")
+
+clear.addEventListener("click", function(){
+    window.localStorage.clear("playlist")
+    contenedorPlaylist.style.display ="none"
+})
+
 }

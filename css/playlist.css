@@ -570,7 +570,10 @@ body{
     opacity: 60%;
 }
 .fila2{
-    text-align: center;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    font-size: xx-large;
 }
 .fila3{
     display: grid;

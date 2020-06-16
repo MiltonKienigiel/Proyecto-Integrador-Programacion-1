@@ -26,6 +26,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre")
     }
     
     
+    
     }).catch(function(error){
         console.error(error)
     })

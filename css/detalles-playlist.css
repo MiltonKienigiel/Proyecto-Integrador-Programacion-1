@@ -446,6 +446,7 @@ body{
     position: absolute;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    bottom: 0;
 }
 
 /*---------------------------------------------------------------------*/
@@ -519,14 +520,14 @@ body{
 }
 
 .boton-principal2{
-    color: white;
+    color: grey;
     font-family: 'Raleway', sans-serif;
     font-size: x-large;
     padding: 10px;
     text-decoration-line:none;
 }
 .boton-principal2:hover{
-    text-decoration-line:none;
+    text-decoration-line:underline;
     color: white;
 }
 .boton-explorar2{
@@ -538,11 +539,13 @@ body{
 }
 .boton-explorar2:hover{
     color: white;
+    text-decoration-line: underline;
+
 }
 .boton-playlist2{
     font-family: 'Raleway', sans-serif;
     font-size: x-large;
-    color: grey;
+    color: white;
     padding: 10px;
     text-decoration-line:none ;
 }
@@ -558,6 +561,8 @@ body{
 }
 .boton-about2:hover{
     color: white;
+    text-decoration-line: underline;
+
 }
 
 .centrar-objetos{
@@ -641,14 +646,14 @@ body{
     opacity: 50%;
 }
 /*---------------------------------------------------------------------*/
-/*----------------------------Playlist COmpu---------------------------*/
+/*----------------------------Playlist Compu---------------------------*/
 .song{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .song-info{
     display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
 }
 .d-none{
     display: block;

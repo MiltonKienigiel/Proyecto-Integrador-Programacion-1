@@ -9,6 +9,23 @@ var generoId = objetoQuery.get('id');
 
 
 
+fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/"+ generoId)
+.then(function(response){
+    return response.json()
+})
+.then(function(data){
+
+    console.log(data);
+    
+let generoNombre = document.querySelector(".titulo-generos")
+
+   generoNombre.innerHTML=`
+   ${data.name}
+   `
+    
+}).catch(function(error){
+    console.error(error)
+})
 
 
 fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/"+generoId+"/artists")
@@ -17,26 +34,45 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/"+genero
 })
 .then(function(data){
 
+    console.log(data);
+    
+
     let artistaGenero = data.data
     let contenedorArtistas = document.querySelector(".seccion-artista")
     
-    for (const artista of artistaGenero) {
-        contenedorArtistas.innerHTML += 
-        `
-        <div>
-            <div class="container2">
-                <a href="details.html?id=${artista.id}">
-                    <img class="imagen-drake" src="${artista.picture_big}" alt="Imagen de ${artista.name}">
-                </a>
-                <a class="textos" href="details.html?id=${artista.id}">${artista.name}</a>
-                <div class="textos2">${artista.type}</div>
-            </div>
-        </div>
+    // for (const artista of artistaGenero) {
+    //     contenedorArtistas.innerHTML += 
+    //     `
+    //     <div>
+    //         <div class="container2">
+    //             <a href="details.html?id=${artista.id}">
+    //                 <img class="imagen-drake" src="${artista.picture_big}" alt="Imagen de ${artista.name}">
+    //             </a>
+    //             <a class="textos" href="details.html?id=${artista.id}">${artista.name}</a>
+    //             <div class="textos2">${artista.type}</div>
+    //         </div>
+    //     </div>
         
         
-        `
-    }
-    
+    //     `
+    // }
+   for (let i = 0; i < 10 ; i++) {
+       const artista = artistaGenero[i];
+       contenedorArtistas.innerHTML += 
+       `
+       <div>
+           <div class="container2">
+               <a href="details.html?id=${artista.id}">
+                   <img class="imagen-drake" src="${artista.picture_big}" alt="Imagen de ${artista.name}">
+               </a>
+               <a class="textos" href="details.html?id=${artista.id}">${artista.name}</a>
+               <div class="textos2">${artista.type}</div>
+           </div>
+       </div>
+       
+       
+       `
+   }
     
 }).catch(function(error){
     console.error(error)

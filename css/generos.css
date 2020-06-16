@@ -252,6 +252,7 @@ body{
     margin-top: 20px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    bottom: 0;
 }
 
 /*---------------------------------------------------------------------*/
@@ -378,18 +379,18 @@ body{
     }
     
     .boton-principal2{
-        color: white;
+        color: grey;
         font-family: 'Raleway', sans-serif;
         font-size: x-large;
         padding: 10px;
         text-decoration-line:none;
     }
     .boton-principal2:hover{
-        text-decoration-line:none;
+        text-decoration-line:underline;
         color: white;
     }
     .boton-explorar2{
-        color: grey;
+        color: white;
         font-family: 'Raleway', sans-serif;
         font-size: x-large;
         padding: 10px;

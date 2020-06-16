@@ -402,6 +402,7 @@ body{
     position: absolute;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    bottom: 0;
 }
 
 /*---------------------------------------------------------------------*/
@@ -475,7 +476,7 @@ body{
 }
 
 .boton-principal2{
-    color: white;
+    color: grey;
     font-family: 'Raleway', sans-serif;
     font-size: x-large;
     padding: 10px;
@@ -498,7 +499,7 @@ body{
 .boton-playlist2{
     font-family: 'Raleway', sans-serif;
     font-size: x-large;
-    color: grey;
+    color: white;
     padding: 10px;
     text-decoration-line:none ;
 }
@@ -629,5 +630,6 @@ body{
     width:10%;
     height:20%;
 }
+
 /*---------------------------------------------------------------------*/
 }

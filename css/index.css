@@ -436,10 +436,33 @@ body{
     font-family: 'Raleway', sans-serif;
     font-size: x-large;}
 
+/*----------------------------------Tablet------------------------*/
+@media(min-width:426px){
+.seccion-artista{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.seccion-album{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.seccion-canciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.seccion-playlist{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.seccion-podcast{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
+}
 /*----------------------------------Computadora------------------------*/
 
-@media(min-width:768px){
+@media(min-width:800px){
 
 .header{
     display: flex;

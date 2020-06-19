@@ -305,7 +305,7 @@ body{
 /*----------------------------------Top Album Celu------------------------*/
 .container-album{
   
-    margin: 20px;
+    margin: 20px 0px 20px 20px;
     border-radius: 15px;
 }
 .container3{

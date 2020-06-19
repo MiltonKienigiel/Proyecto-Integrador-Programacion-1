@@ -230,6 +230,10 @@ body{
     display: grid;
     grid-template-columns: 1fr ;
 }
+.seccion-artista2{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
 .seccion-album{
     display: grid;
     grid-template-columns: 1fr ;
@@ -254,6 +258,13 @@ body{
     
 }
 .textos{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+}
+.textosx{
     font-family: 'Raleway', sans-serif;
     color: white;
     display: flex;
@@ -419,7 +430,11 @@ body{
 
 /*---------------------------------------------------------------------*/
 
-
+.texto-titulos{
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: x-large;}
 
 
 /*----------------------------------Computadora------------------------*/
@@ -572,6 +587,13 @@ body{
 .seccion-artista{
     display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    margin-left:70px ;
+    margin-right:70px;
+}
+.seccion-artista2{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
     color: white;
     margin-left:70px ;
     margin-right:70px;
@@ -743,7 +765,9 @@ body{
     padding-top: 100%;
     position: relative;
 }
-
+.textosx{
+    position: relative;
+}
 .container3 {
     position: relative;
     z-index: 1;

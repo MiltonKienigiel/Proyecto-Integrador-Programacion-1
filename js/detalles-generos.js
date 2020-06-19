@@ -40,22 +40,7 @@ fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/"+genero
     let artistaGenero = data.data
     let contenedorArtistas = document.querySelector(".seccion-artista")
     
-    // for (const artista of artistaGenero) {
-    //     contenedorArtistas.innerHTML += 
-    //     `
-    //     <div>
-    //         <div class="container2">
-    //             <a href="details.html?id=${artista.id}">
-    //                 <img class="imagen-drake" src="${artista.picture_big}" alt="Imagen de ${artista.name}">
-    //             </a>
-    //             <a class="textos" href="details.html?id=${artista.id}">${artista.name}</a>
-    //             <div class="textos2">${artista.type}</div>
-    //         </div>
-    //     </div>
-        
-        
-    //     `
-    // }
+    
    for (let i = 0; i < 10 ; i++) {
        const artista = artistaGenero[i];
        contenedorArtistas.innerHTML += 
